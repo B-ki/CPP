@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/23 15:04:56 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/23 15:27:32 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,12 @@ class	Contact
 		void	setNickName( std::string F );
 		void	setPhoneNumber( std::string F );
 		void	setDarkestSecret( std::string F );
+
+		std::string	Contact::getFirstName( void ) const;
+		std::string	Contact::getLastName(tName( void ) const;
+		std::string	Contact::getNickName( void ) const;
+		std::string	Contact::getPhoneNumber( void ) const;
+		std::string	Contact::getDarkestSecret( void ) const;
 
 		void	print(char *s)
 		{
@@ -63,15 +69,15 @@ class	Contact
 
 		void	print_all(void)
 		{
-			print(_FirstName);
+			print(getFirstName);
 			std::cout << "|";
-			print(_LastName);	
+			print(getLastName);	
 			std::cout << "|";
-			print(_NickName);
+			print(getNickName);
 			std::cout << "|";
-			print(_PhoneNumber);
+			print(getPhoneNumber);
 			std::cout << "|";
-			print(_DarkestSecret);
+			print(getDarkestSecret);
 			std::cout << std::endl;
 		}
 	private:
