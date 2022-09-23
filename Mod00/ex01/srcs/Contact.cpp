@@ -6,12 +6,13 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 14:39:42 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/22 17:00:49 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/23 15:11:09 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
 #include <iostream>
+#include <string>
 
 Contact::Contact( std::string F, std::string L, std::string N, std::string P,
 				str::string D ) : _FirstName(F), _LastName(L), _NickName(N),

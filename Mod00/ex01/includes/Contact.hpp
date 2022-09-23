@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/22 17:00:49 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/23 15:04:56 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,10 +76,10 @@ class	Contact
 		}
 	private:
 		std::string	_FirstName;
-		std::stchar	_LastName;
-		std::stchar	_NickName;
-		std::stchar	_PhoneNumber;
-		std::stchar	_DarkestSecret;
+		std::string	_LastName;
+		std::string	_NickName;
+		std::string	_PhoneNumber;
+		std::string	_DarkestSecret;
 		
 };
 
