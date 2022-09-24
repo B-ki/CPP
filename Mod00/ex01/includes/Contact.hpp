@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/23 15:27:32 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/24 19:19:22 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class	Contact
 	
 //		Constructor & Destructor
 		Contact( std::string F, std::string L, std::string N, std::string P,
-				str::string D );
+				std::string D );
 		~Contact(void);
 
 //		Accessor
@@ -33,52 +33,19 @@ class	Contact
 		void	setPhoneNumber( std::string F );
 		void	setDarkestSecret( std::string F );
 
-		std::string	Contact::getFirstName( void ) const;
-		std::string	Contact::getLastName(tName( void ) const;
-		std::string	Contact::getNickName( void ) const;
-		std::string	Contact::getPhoneNumber( void ) const;
-		std::string	Contact::getDarkestSecret( void ) const;
-
-		void	print(char *s)
-		{
-			int	i;
-
-			i = 0;
-			if (sizeof(s) >= 10)
-			{
-				while (i <= 8)
-				{
-					std::cout << s[i];
-					i++;
-				}
-				std::cout << ".";
-			}
-			else
-			{
-				while (s[i])
-					std::cout << s[i++];
-				while (i == 9)
-				{
-					std::cout << " ";
-					i++;
-				}
-			}
-		}
+		std::string	getFirstName( void ) const;
+		std::string	getLastName( void ) const;
+		std::string	getNickName( void ) const;
+		std::string	getPhoneNumber( void ) const;
+		std::string	getDarkestSecret( void ) const;
 
 		void	fill_contact(void);
 
 		void	print_all(void)
 		{
-			print(getFirstName);
-			std::cout << "|";
-			print(getLastName);	
-			std::cout << "|";
-			print(getNickName);
-			std::cout << "|";
-			print(getPhoneNumber);
-			std::cout << "|";
-			print(getDarkestSecret);
-			std::cout << std::endl;
+			std::cout << this->_FirstName << "|" << this->_LastName << "|";
+			std::cout << this->_NickName << "|" << this->_PhoneNumber << "|";
+			std::cout << this->_DarkestSecret << std::endl;
 		}
 	private:
 		std::string	_FirstName;

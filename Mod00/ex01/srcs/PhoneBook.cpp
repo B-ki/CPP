@@ -6,16 +6,15 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 15:19:03 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/18 15:19:49 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/24 19:20:26 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PhoneBook.hpp"
+#include "Contact.hpp"
 
-PhoneBook::PhoneBook(void)
+int	main(void)
 {
-}
+	Contact	PhoneBook[8];
 
-PhoneBook::~PhoneBook(void)
-{
+	return (0);
 }

@@ -6,16 +6,14 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 14:39:42 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/23 15:11:09 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/24 19:19:22 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
-#include <iostream>
-#include <string>
 
 Contact::Contact( std::string F, std::string L, std::string N, std::string P,
-				str::string D ) : _FirstName(F), _LastName(L), _NickName(N),
+				std::string D ) : _FirstName(F), _LastName(L), _NickName(N),
 				_PhoneNumber(P), _DarkestSecret(D) {
 
 }
@@ -40,31 +38,31 @@ void Contact::fill_contact(void)
 }
 
 void	Contact::setFirstName( std::string F ) {
-	if (F != NULL)
+	if (F.size())
 		this->_FirstName = F;
 	return ;
 }
 
 void	Contact::setLastName( std::string L ) {
-	if (L != NULL)
+	if (L.size())
 		this->_LastName = L;
 	return ;
 }
 
 void	Contact::setNickName( std::string N ) {
-	if (N != NULL)
+	if (N.size())
 		this->_NickName = N;
 	return ;
 }
 
 void	Contact::setPhoneNumber( std::string P ) {
-	if (P != NULL)
+	if (P.size())
 		this->_PhoneNumber = P;
 	return ;
 }
 
 void	Contact::setDarkestSecret( std::string D ) {
-	if (D != NULL)
+	if (D.size())
 		this->_DarkestSecret = D;
 	return ;
 }
