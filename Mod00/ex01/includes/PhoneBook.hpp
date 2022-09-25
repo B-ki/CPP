@@ -1,44 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/18 11:34:58 by rmorel            #+#    #+#             */
+/*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
 /*   Updated: 2022/09/25 18:46:14 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PhoneBook.hpp"
-#include "Contact.hpp"
-#include <iostream>
+#ifndef PHONEBOOK_HPP
+# define PHONEBOOK_HPP 
+
 #include <string>
-#include <exception>
+#include <iostream>
+#include "Contact.hpp"
 
-int	main(void)
+class	PhoneBook
 {
-	std::string		cmd;
-	PhoneBook		list;
+	public:
+	
+//		Constructor & Destructor
+		PhoneBook( void );
+		~PhoneBook(void);
 
-	while(1)
-	{
-		std::cout << "Enter a command : ";
-		std::cin >> cmd;
-		if (cmd.compare("ADD") == 0)
-		{
-			list.addContact();
-		}
-		else if (cmd.compare("SEARCH") == 0)
-		{
-			list.print();
-		}
-		else if (cmd.compare("EXIT") == 0)
-		{
-			return(0);
-		}
-		else
-			std::cout << "Commands are ADD, SEARCH and EXIT." << std::endl;
-	}
-	return (0);
-}
+//		Accessor
+
+		void	addContact( void );
+		void	print() const;
+		Contact getContact( int i ) const;
+
+	private:
+		Contact	_list[8];
+		int		_size;
+		
+};
+
+#endif

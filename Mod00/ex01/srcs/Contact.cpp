@@ -6,16 +6,20 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 14:39:42 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/24 19:19:22 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/26 00:13:57 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
 
-Contact::Contact( std::string F, std::string L, std::string N, std::string P,
+/*Contact::Contact( std::string F, std::string L, std::string N, std::string P,
 				std::string D ) : _FirstName(F), _LastName(L), _NickName(N),
 				_PhoneNumber(P), _DarkestSecret(D) {
+	std::cout << "Contact constructed" << std::endl;
+}*/
 
+Contact::Contact ( void ) {
+	std::cout << "Contact constructed" << std::endl;
 }
 
 Contact::~Contact(void)
@@ -23,7 +27,7 @@ Contact::~Contact(void)
 	std::cout << "Contact destructed" << std::endl;
 }
 
-void Contact::fill_contact(void)
+void Contact::fillContact(void)
 {
 	std::cout << "Enter first name : ";
 	std::cin >> this->_FirstName;

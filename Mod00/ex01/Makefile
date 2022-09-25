@@ -1,5 +1,5 @@
 NAME = phonebook
-SRC = Contact.cpp PhoneBook.cpp
+SRC = Contact.cpp PhoneBook.cpp main.cpp
 SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = bin/

@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/24 19:19:22 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/26 00:40:50 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 
 #include <string>
 #include <iostream>
+#include <iomanip>
 
 class	Contact
 {
 	public:
 	
 //		Constructor & Destructor
-		Contact( std::string F, std::string L, std::string N, std::string P,
-				std::string D );
-		~Contact(void);
+		Contact( void );
+		~Contact(void);	
 
 //		Accessor
 
@@ -39,13 +39,27 @@ class	Contact
 		std::string	getPhoneNumber( void ) const;
 		std::string	getDarkestSecret( void ) const;
 
-		void	fill_contact(void);
+//		Functions
 
-		void	print_all(void)
+		void	fillContact(void);
+
+		void	printAll(void) const
 		{
-			std::cout << this->_FirstName << "|" << this->_LastName << "|";
-			std::cout << this->_NickName << "|" << this->_PhoneNumber << "|";
-			std::cout << this->_DarkestSecret << std::endl;
+			std::cout << std::setw(10);
+			std::cout << this->_FirstName;
+			std::cout << "|" ;
+			std::cout << std::setw(10);
+			std::cout << this->_LastName;
+			std::cout << "|" ;
+			std::cout << std::setw(10);
+			std::cout << this->_NickName;
+			std::cout << "|" ;
+			std::cout << std::setw(10);
+			std::cout << this->_PhoneNumber;
+			std::cout << "|" ;
+			std::cout << std::setw(10);
+			std::cout << this->_DarkestSecret;
+			std::cout << std::endl;
 		}
 	private:
 		std::string	_FirstName;
