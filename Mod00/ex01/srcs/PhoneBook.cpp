@@ -6,25 +6,22 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 15:19:03 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/26 00:44:20 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/28 17:16:29 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+#include <ios>
 
 PhoneBook::PhoneBook ( void ) {
-	std::cout << "PhoneBook constructed" << std::endl;
 	this->_size = 0;
 }
 
 PhoneBook::~PhoneBook ( void ) {
-	std::cout << "PhoneBook destructed" << std::endl;
 }
 
 void PhoneBook::addContact ( void ) {
-	if (this->_size < 9)
-		this->_size++;
-	if (this->_size == 9)
+	if (this->_size == 8)
 	{
 		for (int i = 0; i <= 6; i++	)
 		{
@@ -34,14 +31,17 @@ void PhoneBook::addContact ( void ) {
 			this->_list[i].setPhoneNumber(this->_list[i + 1].getPhoneNumber());
 			this->_list[i].setDarkestSecret(this->_list[i + 1].getDarkestSecret());
 		}
-	}
-	if (this->_size < 9)
 		this->_list[this->_size - 1].fillContact();
-	else
-		this->_list[7].fillContact();
+	}
+	if (this->_size < 8)
+	{
+		this->_size++;
+		this->_list[this->_size - 1].fillContact();
+	}
 }
 
-void PhoneBook::print ( void ) const {
+void PhoneBook::print ( void ) const
+{
 	int	i;
 	int	sz;
 
@@ -50,6 +50,20 @@ void PhoneBook::print ( void ) const {
 		sz = 8;
 	else
 		sz = this->_size;
-	while (i < sz)
-		this->_list[i++].printAll();
+	if (this->_size)
+	{
+		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
+		std::cout << std::setw(0) << std::setfill(' ');
+		std::cout << "-First Name- Last Name- Nick Name- Phone Nb - Dark Sec -" <<  std::endl;
+		while (i < sz)
+		{
+			std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
+			std::cout << std::setw(0) << std::setfill(' ');
+			std::cout << "-";
+			this->_list[i++].printAll();
+			std::cout << "-" << std::endl;
+		}
+		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
+		std::cout << std::setw(0) << std::setfill(' ');
+	}
 }

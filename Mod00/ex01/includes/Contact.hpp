@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/26 00:40:50 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/26 09:17:25 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,24 +43,10 @@ class	Contact
 
 		void	fillContact(void);
 
-		void	printAll(void) const
-		{
-			std::cout << std::setw(10);
-			std::cout << this->_FirstName;
-			std::cout << "|" ;
-			std::cout << std::setw(10);
-			std::cout << this->_LastName;
-			std::cout << "|" ;
-			std::cout << std::setw(10);
-			std::cout << this->_NickName;
-			std::cout << "|" ;
-			std::cout << std::setw(10);
-			std::cout << this->_PhoneNumber;
-			std::cout << "|" ;
-			std::cout << std::setw(10);
-			std::cout << this->_DarkestSecret;
-			std::cout << std::endl;
-		}
+		void	printAll(void) const;
+
+		void	truncPrint(std::string s) const;
+
 	private:
 		std::string	_FirstName;
 		std::string	_LastName;

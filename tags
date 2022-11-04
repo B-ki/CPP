@@ -1,54 +1,115 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/mnt/nfs/homes/rmorel/Documents/CPP/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	0.0.0	//
+!_TAG_PROGRAM_VERSION	5.9.0	//
 $(NAME)	Mod00/ex00/Makefile	/^$(NAME):	$(OBJ)$/;"	t
 $(NAME)	Mod00/ex01/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod00/ex02/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
 $(OBJDIR)	Mod00/ex01/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod00/ex02/Makefile	/^$(OBJDIR):$/;"	t
 $(OBJDIR)%.o	Mod00/ex01/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod00/ex02/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
 %.o	Mod00/ex00/Makefile	/^%.o:		%.cpp$/;"	t
+Account	Mod00/ex02/includes/Account.hpp	/^class Account {$/;"	c
+Account	Mod00/ex02/srcs/Account.cpp	/^Account::Account(int initial_deposit)$/;"	f	class:Account
 CC	Mod00/ex00/Makefile	/^CC = g++$/;"	m
 CC	Mod00/ex01/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod00/ex02/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
 CONTACT_HPP	Mod00/ex01/includes/Contact.hpp	/^# define CONTACT_HPP /;"	d
 Contact	Mod00/ex01/includes/Contact.hpp	/^class	Contact$/;"	c
-Contact	Mod00/ex01/srcs/Contact.cpp	/^Contact::Contact( std::string F, std::string L, std::string N, std::string P,$/;"	f	class:Contact
-Directory	Mod00/ex01/includes/PhoneBook.hpp	/^		Contact	Directory[8];$/;"	m	class:PhoneBook	typeref:typename:Contact[8]
+Contact	Mod00/ex01/srcs/Contact.cpp	/^Contact::Contact ( void )$/;"	f	class:Contact
 INCDIR	Mod00/ex01/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod00/ex02/Makefile	/^INCDIR = includes\/$/;"	m
 NAME	Mod00/ex00/Makefile	/^NAME = megaphone$/;"	m
 NAME	Mod00/ex01/Makefile	/^NAME = phonebook$/;"	m
+NAME	Mod00/ex02/Makefile	/^NAME = accounts$/;"	m
 OBJ	Mod00/ex00/Makefile	/^OBJ = $(SRC:.cpp=.o)$/;"	m
 OBJ	Mod00/ex01/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod00/ex02/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
 OBJDIR	Mod00/ex01/Makefile	/^OBJDIR = bin\/$/;"	m
-PHONEBOOK_HPP	Mod00/ex01/includes/PhoneBook.hpp	/^# define PHONEBOOK_HPP$/;"	d
-PhoneBook	Mod00/ex01/includes/PhoneBook.hpp	/^class PhoneBook {$/;"	c
-PhoneBook	Mod00/ex01/srcs/PhoneBook.cpp	/^PhoneBook::PhoneBook(void)$/;"	f	class:PhoneBook
+OBJDIR	Mod00/ex02/Makefile	/^OBJDIR = bin\/$/;"	m
+PHONEBOOK_HPP	Mod00/ex01/includes/PhoneBook.hpp	/^# define PHONEBOOK_HPP /;"	d
+PhoneBook	Mod00/ex01/includes/PhoneBook.hpp	/^class	PhoneBook$/;"	c
+PhoneBook	Mod00/ex01/srcs/PhoneBook.cpp	/^PhoneBook::PhoneBook ( void ) {$/;"	f	class:PhoneBook
 RM	Mod00/ex00/Makefile	/^RM = rm -f$/;"	m
 RM	Mod00/ex01/Makefile	/^RM = rm -f$/;"	m
+RM	Mod00/ex02/Makefile	/^RM = rm -f$/;"	m
 SRC	Mod00/ex00/Makefile	/^SRC = megaphone.cpp$/;"	m
 SRC	Mod00/ex01/Makefile	/^SRC = Contact.cpp PhoneBook.cpp main.cpp$/;"	m
+SRC	Mod00/ex02/Makefile	/^SRC = Account.cpp test.cpp$/;"	m
 SRCDIR	Mod00/ex01/Makefile	/^SRCDIR = srcs\/$/;"	m
-_DarkestSecret	Mod00/ex01/includes/Contact.hpp	/^		std::stchar	_DarkestSecret;$/;"	m	class:Contact	typeref:typename:std::stchar
+SRCDIR	Mod00/ex02/Makefile	/^SRCDIR = srcs\/$/;"	m
+_DarkestSecret	Mod00/ex01/includes/Contact.hpp	/^		std::string	_DarkestSecret;$/;"	m	class:Contact	typeref:typename:std::string
 _FirstName	Mod00/ex01/includes/Contact.hpp	/^		std::string	_FirstName;$/;"	m	class:Contact	typeref:typename:std::string
-_LastName	Mod00/ex01/includes/Contact.hpp	/^		std::stchar	_LastName;$/;"	m	class:Contact	typeref:typename:std::stchar
-_NickName	Mod00/ex01/includes/Contact.hpp	/^		std::stchar	_NickName;$/;"	m	class:Contact	typeref:typename:std::stchar
-_PhoneNumber	Mod00/ex01/includes/Contact.hpp	/^		std::stchar	_PhoneNumber;$/;"	m	class:Contact	typeref:typename:std::stchar
-add	Mod00/ex01/includes/PhoneBook.hpp	/^	void	add(Contact C)$/;"	f	class:PhoneBook	typeref:typename:void
+_LastName	Mod00/ex01/includes/Contact.hpp	/^		std::string	_LastName;$/;"	m	class:Contact	typeref:typename:std::string
+_NickName	Mod00/ex01/includes/Contact.hpp	/^		std::string	_NickName;$/;"	m	class:Contact	typeref:typename:std::string
+_PhoneNumber	Mod00/ex01/includes/Contact.hpp	/^		std::string	_PhoneNumber;$/;"	m	class:Contact	typeref:typename:std::string
+__ACCOUNT_H__	Mod00/ex02/includes/Account.hpp	/^#define __ACCOUNT_H__$/;"	d
+_accountIndex	Mod00/ex02/includes/Account.hpp	/^	int				_accountIndex;$/;"	m	class:Account	typeref:typename:int
+_amount	Mod00/ex02/includes/Account.hpp	/^	int				_amount;$/;"	m	class:Account	typeref:typename:int
+_displayTimestamp	Mod00/ex02/srcs/Account.cpp	/^void Account::_displayTimestamp(void)$/;"	f	class:Account	typeref:typename:void
+_list	Mod00/ex01/includes/PhoneBook.hpp	/^		Contact	_list[8];$/;"	m	class:PhoneBook	typeref:typename:Contact[8]
+_nbAccounts	Mod00/ex02/includes/Account.hpp	/^	static int	_nbAccounts;$/;"	m	class:Account	typeref:typename:int
+_nbAccounts	Mod00/ex02/srcs/Account.cpp	/^int	Account::_nbAccounts = 0;$/;"	m	class:Account	typeref:typename:int
+_nbDeposits	Mod00/ex02/includes/Account.hpp	/^	int				_nbDeposits;$/;"	m	class:Account	typeref:typename:int
+_nbWithdrawals	Mod00/ex02/includes/Account.hpp	/^	int				_nbWithdrawals;$/;"	m	class:Account	typeref:typename:int
+_size	Mod00/ex01/includes/PhoneBook.hpp	/^		int		_size;$/;"	m	class:PhoneBook	typeref:typename:int
+_totalAmount	Mod00/ex02/includes/Account.hpp	/^	static int	_totalAmount;$/;"	m	class:Account	typeref:typename:int
+_totalAmount	Mod00/ex02/srcs/Account.cpp	/^int	Account::_totalAmount = 0;$/;"	m	class:Account	typeref:typename:int
+_totalNbDeposits	Mod00/ex02/includes/Account.hpp	/^	static int	_totalNbDeposits;$/;"	m	class:Account	typeref:typename:int
+_totalNbDeposits	Mod00/ex02/srcs/Account.cpp	/^int	Account::_totalNbDeposits = 0;$/;"	m	class:Account	typeref:typename:int
+_totalNbWithdrawals	Mod00/ex02/includes/Account.hpp	/^	static int	_totalNbWithdrawals;$/;"	m	class:Account	typeref:typename:int
+_totalNbWithdrawals	Mod00/ex02/srcs/Account.cpp	/^int	Account::_totalNbWithdrawals = 0;$/;"	m	class:Account	typeref:typename:int
+acc_int_t	Mod00/ex02/srcs/test.cpp	/^	typedef std::pair<accounts_t::iterator, ints_t::iterator> acc_int_t;$/;"	t	function:main	typeref:typename:std::pair<accounts_t::iterator,ints_t::iterator>	file:
+accounts_t	Mod00/ex02/srcs/test.cpp	/^	typedef std::vector<Account::t>							  accounts_t;$/;"	t	function:main	typeref:typename:std::vector<Account::t>	file:
+addContact	Mod00/ex01/srcs/PhoneBook.cpp	/^void PhoneBook::addContact ( void ) {$/;"	f	class:PhoneBook	typeref:typename:void
 all	Mod00/ex00/Makefile	/^all:		$(NAME)$/;"	t
 all	Mod00/ex01/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod00/ex02/Makefile	/^all:		$(NAME)$/;"	t
+checkAmount	Mod00/ex02/srcs/Account.cpp	/^int Account::checkAmount(void) const$/;"	f	class:Account	typeref:typename:int
 clean	Mod00/ex00/Makefile	/^clean:	$/;"	t
 clean	Mod00/ex01/Makefile	/^clean:	$/;"	t
+clean	Mod00/ex02/Makefile	/^clean:	$/;"	t
+displayAccountsInfos	Mod00/ex02/srcs/Account.cpp	/^void Account::displayAccountsInfos(void)$/;"	f	class:Account	typeref:typename:void
+displayStatus	Mod00/ex02/srcs/Account.cpp	/^void Account::displayStatus(void) const$/;"	f	class:Account	typeref:typename:void
 fclean	Mod00/ex00/Makefile	/^fclean:		clean$/;"	t
 fclean	Mod00/ex01/Makefile	/^fclean:			clean$/;"	t
-fill_contact	Mod00/ex01/srcs/Contact.cpp	/^void Contact::fill_contact(void)$/;"	f	class:Contact	typeref:typename:void
+fclean	Mod00/ex02/Makefile	/^fclean:			clean$/;"	t
+fillContact	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::fillContact(void)$/;"	f	class:Contact	typeref:typename:void
+getDarkestSecret	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getDarkestSecret( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
+getFirstName	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getFirstName( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
+getLastName	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getLastName( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
+getNbAccounts	Mod00/ex02/srcs/Account.cpp	/^int	 Account::getNbAccounts(void)$/;"	f	class:Account	typeref:typename:int
+getNbDeposits	Mod00/ex02/srcs/Account.cpp	/^int	 Account::getNbDeposits(void)$/;"	f	class:Account	typeref:typename:int
+getNbWithdrawals	Mod00/ex02/srcs/Account.cpp	/^int	 Account::getNbWithdrawals(void)$/;"	f	class:Account	typeref:typename:int
+getNickName	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getNickName( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
+getPhoneNumber	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getPhoneNumber( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
+getTotalAmount	Mod00/ex02/srcs/Account.cpp	/^int	 Account::getTotalAmount(void)$/;"	f	class:Account	typeref:typename:int
+ints_t	Mod00/ex02/srcs/test.cpp	/^	typedef std::vector<int>								  ints_t;$/;"	t	function:main	typeref:typename:std::vector<int>	file:
 main	Mod00/ex00/megaphone.cpp	/^int	main(int ac, char **av)$/;"	f	typeref:typename:int
 main	Mod00/ex01/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
-print	Mod00/ex01/includes/Contact.hpp	/^		void	print(char *s)$/;"	f	class:Contact	typeref:typename:void
-print_all	Mod00/ex01/includes/Contact.hpp	/^		void	print_all(void)$/;"	f	class:Contact	typeref:typename:void
+main	Mod00/ex02/srcs/test.cpp	/^int		main( void ) {$/;"	f	typeref:typename:int
+makeDeposit	Mod00/ex02/srcs/Account.cpp	/^void Account::makeDeposit(int deposit)$/;"	f	class:Account	typeref:typename:void
+makeWithdrawal	Mod00/ex02/srcs/Account.cpp	/^bool Account::makeWithdrawal(int withdrawal)$/;"	f	class:Account	typeref:typename:bool
+print	Mod00/ex01/srcs/PhoneBook.cpp	/^void PhoneBook::print ( void ) const$/;"	f	class:PhoneBook	typeref:typename:void
+printAll	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::printAll(void) const$/;"	f	class:Contact	typeref:typename:void
 re	Mod00/ex00/Makefile	/^re:			fclean all$/;"	t
 re	Mod00/ex01/Makefile	/^re:			fclean all$/;"	t
-size	Mod00/ex01/includes/PhoneBook.hpp	/^		int		size;$/;"	m	class:PhoneBook	typeref:typename:int
+re	Mod00/ex02/Makefile	/^re:			fclean all$/;"	t
+setDarkestSecret	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setDarkestSecret( std::string D ) {$/;"	f	class:Contact	typeref:typename:void
+setFirstName	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setFirstName( std::string F ) {$/;"	f	class:Contact	typeref:typename:void
+setLastName	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setLastName( std::string L ) {$/;"	f	class:Contact	typeref:typename:void
+setNickName	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setNickName( std::string N ) {$/;"	f	class:Contact	typeref:typename:void
+setPhoneNumber	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setPhoneNumber( std::string P ) {$/;"	f	class:Contact	typeref:typename:void
+t	Mod00/ex02/includes/Account.hpp	/^	typedef Account		t;$/;"	t	class:Account	typeref:typename:Account
+truncPrint	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::truncPrint(std::string s) const$/;"	f	class:Contact	typeref:typename:void
+~Account	Mod00/ex02/srcs/Account.cpp	/^Account::~Account(void)$/;"	f	class:Account
 ~Contact	Mod00/ex01/srcs/Contact.cpp	/^Contact::~Contact(void)$/;"	f	class:Contact
-~PhoneBook	Mod00/ex01/srcs/PhoneBook.cpp	/^PhoneBook::~PhoneBook(void)$/;"	f	class:PhoneBook
+~PhoneBook	Mod00/ex01/srcs/PhoneBook.cpp	/^PhoneBook::~PhoneBook ( void ) {$/;"	f	class:PhoneBook

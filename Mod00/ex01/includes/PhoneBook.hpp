@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/25 18:46:14 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/10/10 17:24:00 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class	PhoneBook
 		PhoneBook( void );
 		~PhoneBook(void);
 
-//		Accessor
+//		Functions
 
 		void	addContact( void );
 		void	print() const;

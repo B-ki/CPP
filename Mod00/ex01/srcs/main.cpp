@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:34:58 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/25 18:46:14 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/09/28 15:17:34 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,24 +21,19 @@ int	main(void)
 	std::string		cmd;
 	PhoneBook		list;
 
-	while(1)
+	std::cout << "Commands are ADD, SEARCH and EXIT." << std::endl;
+	do
 	{
 		std::cout << "Enter a command : ";
-		std::cin >> cmd;
+		std::getline(std::cin, cmd);
 		if (cmd.compare("ADD") == 0)
-		{
 			list.addContact();
-		}
 		else if (cmd.compare("SEARCH") == 0)
-		{
 			list.print();
-		}
 		else if (cmd.compare("EXIT") == 0)
-		{
 			return(0);
-		}
-		else
-			std::cout << "Commands are ADD, SEARCH and EXIT." << std::endl;
-	}
+		cmd.clear();
+	} while (cmd.empty() && std::cin);
+
 	return (0);
 }

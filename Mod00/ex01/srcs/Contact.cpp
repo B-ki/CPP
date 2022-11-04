@@ -6,39 +6,84 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 14:39:42 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/26 00:13:57 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/10/10 17:15:51 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
 
-/*Contact::Contact( std::string F, std::string L, std::string N, std::string P,
-				std::string D ) : _FirstName(F), _LastName(L), _NickName(N),
-				_PhoneNumber(P), _DarkestSecret(D) {
-	std::cout << "Contact constructed" << std::endl;
-}*/
-
-Contact::Contact ( void ) {
-	std::cout << "Contact constructed" << std::endl;
+Contact::Contact ( void )
+{
 }
 
 Contact::~Contact(void)
 {
-	std::cout << "Contact destructed" << std::endl;
 }
 
-void Contact::fillContact(void)
+void	Contact::fillContact(void)
 {
-	std::cout << "Enter first name : ";
-	std::cin >> this->_FirstName;
-	std::cout << "Enter last name : ";
-	std::cin >> this->_LastName;
-	std::cout << "Enter nick name : ";
-	std::cin >> this->_NickName;
-	std::cout << "Enter phone number : ";
-	std::cin >> this->_PhoneNumber;
-	std::cout << "Enter darkest secret : ";
-	std::cin >> this->_DarkestSecret;
+	std::string buf;
+	while (buf.empty() && std::cin)
+	{
+		std::cout << "Enter first name : ";
+		std::getline (std::cin, buf);
+	}
+	this->_FirstName = buf;
+	buf.clear();
+	while (buf.empty() && std::cin)
+	{
+		std::cout << "Enter last name : ";
+		std::getline (std::cin,buf);
+	}
+	this->_LastName = buf;
+	buf.clear();
+	while (buf.empty() && std::cin)
+	{
+		std::cout << "Enter nick name : ";
+		std::getline (std::cin,buf);
+	}
+	this->_NickName = buf;
+	buf.clear();
+	while (buf.empty() && std::cin)
+	{
+		std::cout << "Enter phone number : ";
+		std::getline (std::cin,buf);
+	}
+	this->_PhoneNumber = buf;
+	buf.clear();
+	while (buf.empty() && std::cin)
+	{
+		std::cout << "Enter darkest secret : ";
+		std::getline (std::cin,buf);
+	}
+	this->_DarkestSecret = buf;
+	buf.clear();
+}
+
+void	Contact::truncPrint(std::string s) const
+{
+	if (s.size() <= 10)
+	{
+		std::cout << std::setw(10);
+		std::cout << s;
+	}
+	else
+	{
+		std::cout << std::setw(9);
+		std::cout << s.substr(0, 9) << ".";
+	}
+}
+void	Contact::printAll(void) const
+{
+	truncPrint(this->_FirstName);
+	std::cout << "|";
+	truncPrint(this->_LastName);
+	std::cout << "|";
+	truncPrint(this->_NickName);
+	std::cout << "|";
+	truncPrint(this->_PhoneNumber);
+	std::cout << "|";
+	truncPrint(this->_DarkestSecret);
 }
 
 void	Contact::setFirstName( std::string F ) {
