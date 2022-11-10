@@ -1,42 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 15:05:26 by rmorel           ###   ########.fr       */
+/*   Created: 2022/10/28 18:26:46 by rmorel            #+#    #+#             */
+/*   Updated: 2022/10/28 19:33:01 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP 
-
-#include <string>
 #include <iostream>
-#include "Contact.hpp"
+#include "Zombie.hpp"
 
-class	PhoneBook
+Zombie::Zombie( std::string s ) : _Name(s)
 {
-	public:
-	
-//		Constructor & Destructor
-		PhoneBook( void );
-		~PhoneBook(void);
+	std::cout << "Constructor called !" << std::endl;
+}
 
-//		Functions
+Zombie::~Zombie( void )
+{
+	std::cout << "Zombie " << this->_Name << " destructed T.T" << std::endl;
+}
 
-		void	addContact( void );
-		void	print() const;
-		void	contactPrint( int i) const;
-		Contact getContact( int i ) const;
-		int		getSize() const;
-
-	private:
-		Contact	_list[8];
-		int		_size;
-		
-};
-
-#endif
+void	Zombie::announce( void )
+{
+	std::cout << this->_Name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}

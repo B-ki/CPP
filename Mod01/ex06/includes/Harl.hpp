@@ -1,42 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*   harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 15:05:26 by rmorel           ###   ########.fr       */
+/*   Created: 2022/11/10 13:58:33 by rmorel            #+#    #+#             */
+/*   Updated: 2022/11/11 00:15:59 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP 
+#ifndef HARL_HPP
+#define HARL_HPP
 
-#include <string>
 #include <iostream>
-#include "Contact.hpp"
+#include <string>
 
-class	PhoneBook
+class	Harl
 {
-	public:
-	
-//		Constructor & Destructor
-		PhoneBook( void );
-		~PhoneBook(void);
-
-//		Functions
-
-		void	addContact( void );
-		void	print() const;
-		void	contactPrint( int i) const;
-		Contact getContact( int i ) const;
-		int		getSize() const;
-
+	//	Members :
 	private:
-		Contact	_list[8];
-		int		_size;
-		
+		typedef	void (Harl::*funcPtr)(void);
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
+
+	public:
+	// Constructors & Destructors
+		Harl(void);
+		~Harl(void);
+	//	Member functions
+		void	complain(std::string level);
 };
 
 #endif

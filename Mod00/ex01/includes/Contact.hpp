@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/26 09:17:25 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/08 14:56:47 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ class	Contact
 		void	fillContact(void);
 
 		void	printAll(void) const;
+
+		void	printSpec(void) const;
 
 		void	truncPrint(std::string s) const;
 

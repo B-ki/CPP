@@ -1,42 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 15:05:26 by rmorel           ###   ########.fr       */
+/*   Created: 2022/10/28 18:00:17 by rmorel            #+#    #+#             */
+/*   Updated: 2022/10/28 20:13:43 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP 
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP 
 
 #include <string>
 #include <iostream>
-#include "Contact.hpp"
+#include <iomanip>
 
-class	PhoneBook
+class	Zombie
 {
+//		Attributes
+	private:
+		std::string	_Name;
+		
 	public:
-	
 //		Constructor & Destructor
-		PhoneBook( void );
-		~PhoneBook(void);
+		Zombie( void );
+		Zombie( std::string s );
+		~Zombie( void );	
+
+//		Accessor
+
+		void	setName( std::string F );
 
 //		Functions
+		void	announce(void);
 
-		void	addContact( void );
-		void	print() const;
-		void	contactPrint( int i) const;
-		Contact getContact( int i ) const;
-		int		getSize() const;
-
-	private:
-		Contact	_list[8];
-		int		_size;
-		
 };
+
+Zombie*	zombieHorde( int N, std::string name);
 
 #endif

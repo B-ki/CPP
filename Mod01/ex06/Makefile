@@ -1,10 +1,7 @@
-NAME = filestream
-SRC = main.cpp
+NAME = Harlfilter
+SRC = main.cpp Harl.cpp
 SRCDIR = srcs/
 INCDIR = includes/
-TESTDIR = test/
-TEST = file.replace emptyfile.replace lilfile.replace
-REPLACEFILE = $(addprefix $(TESTDIR), $(TEST))
 OBJDIR = bin/
 CC = c++ -I$(INCDIR)
 CFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -24,16 +21,10 @@ $(OBJDIR):
 
 clean:	
 		$(RM) -rf $(OBJDIR)
-		$(RM) $(REPLACEFILE)
 
 fclean:			clean
 		$(RM) $(NAME)
 
-test:
-		./$(NAME) $(TESTDIR)file "lil" "lol"
-		./$(NAME) $(TESTDIR)emptyfile "lil" "lol"
-		./$(NAME) $(TESTDIR)lilfile "lil" "lol"
-
 re:			fclean all
 
-.PHONY:		all clean fclean re test
+.PHONY:		all clean fclean re

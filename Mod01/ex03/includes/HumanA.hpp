@@ -1,42 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 15:05:26 by rmorel           ###   ########.fr       */
+/*   Created: 2022/10/31 20:00:02 by rmorel            #+#    #+#             */
+/*   Updated: 2022/11/09 11:30:41 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP 
+#ifndef HUMANA_HPP
+#define HUMANA_HPP
 
 #include <string>
+#include <iomanip>
 #include <iostream>
-#include "Contact.hpp"
+#include "Weapon.hpp"
 
-class	PhoneBook
+class HumanA
 {
-	public:
-	
-//		Constructor & Destructor
-		PhoneBook( void );
-		~PhoneBook(void);
-
-//		Functions
-
-		void	addContact( void );
-		void	print() const;
-		void	contactPrint( int i) const;
-		Contact getContact( int i ) const;
-		int		getSize() const;
-
+	//	Attributes
 	private:
-		Contact	_list[8];
-		int		_size;
-		
+		std::string	_name;
+		Weapon&	_weapon;
+	public:
+	//	Constructor & Destructor
+		HumanA(std::string n, Weapon& w);
+		~HumanA(void);
+	//	Accessor
+	//	Member Functions
+		void attack(void) const;
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 15:19:03 by rmorel            #+#    #+#             */
-/*   Updated: 2022/09/28 17:16:29 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/08 15:18:47 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,18 +52,40 @@ void PhoneBook::print ( void ) const
 		sz = this->_size;
 	if (this->_size)
 	{
-		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
+		std::cout << std::setw(45) << std::setfill('-') << '-' << std::endl;
 		std::cout << std::setw(0) << std::setfill(' ');
-		std::cout << "-First Name- Last Name- Nick Name- Phone Nb - Dark Sec -" <<  std::endl;
+		std::cout << "-First Name- Last Name- Nick Name- Phone Nb -" <<  std::endl;
 		while (i < sz)
 		{
-			std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
+			std::cout << std::setw(45) << std::setfill('-') << '-' << std::endl;
 			std::cout << std::setw(0) << std::setfill(' ');
 			std::cout << "-";
 			this->_list[i++].printAll();
 			std::cout << "-" << std::endl;
 		}
+		std::cout << std::setw(45) << std::setfill('-') << '-' << std::endl;
+		std::cout << std::setw(0) << std::setfill(' ');
+	}
+}
+
+void PhoneBook::contactPrint ( int i ) const
+{
+	if (this->_size)
+	{
+		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
+		std::cout << std::setw(0) << std::setfill(' ');
+		std::cout << "-First Name- Last Name- Nick Name- Phone Nb - Dark Sec -" <<  std::endl;
+		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
+		std::cout << std::setw(0) << std::setfill(' ');
+		std::cout << "-";
+		this->_list[i - 1].printSpec();
+		std::cout << "-" << std::endl;
 		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
 		std::cout << std::setw(0) << std::setfill(' ');
 	}
+}
+
+int	PhoneBook::getSize() const
+{
+	return (this->_size);
 }

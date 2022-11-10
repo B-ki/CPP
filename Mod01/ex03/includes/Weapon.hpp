@@ -1,42 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 15:05:26 by rmorel           ###   ########.fr       */
+/*   Created: 2022/10/31 20:00:02 by rmorel            #+#    #+#             */
+/*   Updated: 2022/11/08 18:42:55 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP 
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
 
 #include <string>
+#include <iomanip>
 #include <iostream>
-#include "Contact.hpp"
 
-class	PhoneBook
+class Weapon
 {
-	public:
-	
-//		Constructor & Destructor
-		PhoneBook( void );
-		~PhoneBook(void);
-
-//		Functions
-
-		void	addContact( void );
-		void	print() const;
-		void	contactPrint( int i) const;
-		Contact getContact( int i ) const;
-		int		getSize() const;
-
+	//	Attributes
 	private:
-		Contact	_list[8];
-		int		_size;
-		
+		std::string	_type;
+	public:
+	//	Constructor & Destructor
+		Weapon(void);
+		Weapon(std::string s);
+		~Weapon(void);
+	//	Accessor
+		std::string const & getType(void) const;
+		void	setType(std::string const & str);
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 14:39:42 by rmorel            #+#    #+#             */
-/*   Updated: 2022/10/10 17:15:51 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/08 14:57:06 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,17 @@ void	Contact::truncPrint(std::string s) const
 	}
 }
 void	Contact::printAll(void) const
+{
+	truncPrint(this->_FirstName);
+	std::cout << "|";
+	truncPrint(this->_LastName);
+	std::cout << "|";
+	truncPrint(this->_NickName);
+	std::cout << "|";
+	truncPrint(this->_PhoneNumber);
+}
+
+void	Contact::printSpec(void) const
 {
 	truncPrint(this->_FirstName);
 	std::cout << "|";
