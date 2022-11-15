@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "/data/data/com.termux/files/home/storage/CPP/Mod02/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/main.cpp -o bin/main.o",
+    "file": "srcs/main.cpp"
+  },
+  {
+    "directory": "/data/data/com.termux/files/home/storage/CPP/Mod02/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/Fixed.cpp -o bin/Fixed.o",
+    "file": "srcs/Fixed.cpp"
+  }
+]
