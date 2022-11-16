@@ -4,7 +4,7 @@
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/mnt/nfs/homes/rmorel/Documents/CPP/	//
+!_TAG_PROC_CWD	/data/data/com.termux/files/home/storage/CPP/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
@@ -12,43 +12,298 @@
 $(NAME)	Mod00/ex00/Makefile	/^$(NAME):	$(OBJ)$/;"	t
 $(NAME)	Mod00/ex01/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
 $(NAME)	Mod00/ex02/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod01/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod01/ex00/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod01/ex01/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod01/ex02/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod01/ex03/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod01/ex04/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod01/ex05/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod01/ex06/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod02/ex00/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod02/ex01/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod02/ex02/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod02/ex03/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod03/ex00/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
+$(NAME)	Mod03/ex01/Makefile	/^$(NAME):		$(OBJDIR) $(OBJ)$/;"	t
 $(OBJDIR)	Mod00/ex01/Makefile	/^$(OBJDIR):$/;"	t
 $(OBJDIR)	Mod00/ex02/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod01/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod01/ex00/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod01/ex01/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod01/ex02/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod01/ex03/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod01/ex04/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod01/ex05/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod01/ex06/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod02/ex00/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod02/ex01/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod02/ex02/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod02/ex03/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod03/ex00/Makefile	/^$(OBJDIR):$/;"	t
+$(OBJDIR)	Mod03/ex01/Makefile	/^$(OBJDIR):$/;"	t
 $(OBJDIR)%.o	Mod00/ex01/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
 $(OBJDIR)%.o	Mod00/ex02/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod01/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod01/ex00/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod01/ex01/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod01/ex02/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod01/ex03/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod01/ex04/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod01/ex05/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod01/ex06/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod02/ex00/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod02/ex01/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod02/ex02/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod02/ex03/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod03/ex00/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
+$(OBJDIR)%.o	Mod03/ex01/Makefile	/^$(OBJDIR)%.o:	$(SRCDIR)%.cpp$/;"	t
 %.o	Mod00/ex00/Makefile	/^%.o:		%.cpp$/;"	t
+0	Mod02/ex01/.cache/compile_commands.json	/^  {$/;"	o
+0	Mod02/ex02/.cache/compile_commands.json	/^  {$/;"	o
+0	Mod02/ex03/.cache/compile_commands.json	/^  {$/;"	o
+0	Mod03/ex00/.cache/compile_commands.json	/^  {$/;"	o
+0	Mod03/ex01/.cache/compile_commands.json	/^  {$/;"	o
+1	Mod02/ex01/.cache/compile_commands.json	/^  {$/;"	o
+1	Mod02/ex02/.cache/compile_commands.json	/^  {$/;"	o
+1	Mod02/ex03/.cache/compile_commands.json	/^  {$/;"	o
+1	Mod03/ex00/.cache/compile_commands.json	/^  {$/;"	o
+1	Mod03/ex01/.cache/compile_commands.json	/^  {$/;"	o
 Account	Mod00/ex02/includes/Account.hpp	/^class Account {$/;"	c
 Account	Mod00/ex02/srcs/Account.cpp	/^Account::Account(int initial_deposit)$/;"	f	class:Account
 CC	Mod00/ex00/Makefile	/^CC = g++$/;"	m
 CC	Mod00/ex01/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
 CC	Mod00/ex02/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod01/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod01/ex00/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod01/ex01/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod01/ex02/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod01/ex03/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod01/ex04/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod01/ex05/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod01/ex06/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod02/ex00/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod02/ex01/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod02/ex02/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod02/ex03/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod03/ex00/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CC	Mod03/ex01/Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CLAP	Mod03/ex00/includes/ClapTrap.hpp	/^# define CLAP /;"	d
+CLAP	Mod03/ex01/includes/ClapTrap.hpp	/^# define CLAP /;"	d
+CLAPTRAP_HPP	Mod03/ex00/includes/ClapTrap.hpp	/^#define CLAPTRAP_HPP /;"	d
+CLAPTRAP_HPP	Mod03/ex01/includes/ClapTrap.hpp	/^#define CLAPTRAP_HPP /;"	d
 CONTACT_HPP	Mod00/ex01/includes/Contact.hpp	/^# define CONTACT_HPP /;"	d
+ClapTrap	Mod03/ex00/includes/ClapTrap.hpp	/^class ClapTrap$/;"	c
+ClapTrap	Mod03/ex00/srcs/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const & src)$/;"	f	class:ClapTrap
+ClapTrap	Mod03/ex00/srcs/ClapTrap.cpp	/^ClapTrap::ClapTrap(std::string n) : _name(n),_HP(10),_MP(10),_AD(0)$/;"	f	class:ClapTrap
+ClapTrap	Mod03/ex00/srcs/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _name("Random Name"),_HP(10),_MP(10),_AD(0)$/;"	f	class:ClapTrap
+ClapTrap	Mod03/ex01/includes/ClapTrap.hpp	/^class ClapTrap$/;"	c
+ClapTrap	Mod03/ex01/srcs/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const & src)$/;"	f	class:ClapTrap
+ClapTrap	Mod03/ex01/srcs/ClapTrap.cpp	/^ClapTrap::ClapTrap(std::string n) : _name(n),_HP(10),_MP(10),_AD(0)$/;"	f	class:ClapTrap
+ClapTrap	Mod03/ex01/srcs/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _name("Random Name"),_HP(10),_MP(10),_AD(0)$/;"	f	class:ClapTrap
 Contact	Mod00/ex01/includes/Contact.hpp	/^class	Contact$/;"	c
 Contact	Mod00/ex01/srcs/Contact.cpp	/^Contact::Contact ( void )$/;"	f	class:Contact
+FIXED_HPP	Mod02/ex00/includes/Fixed.hpp	/^#define FIXED_HPP /;"	d
+FIXED_HPP	Mod02/ex01/includes/Fixed.hpp	/^#define FIXED_HPP /;"	d
+FIXED_HPP	Mod02/ex02/includes/Fixed.hpp	/^#define FIXED_HPP /;"	d
+FIXED_HPP	Mod02/ex03/includes/Fixed.hpp	/^#define FIXED_HPP /;"	d
+Fixed	Mod02/ex00/includes/Fixed.hpp	/^class Fixed$/;"	c
+Fixed	Mod02/ex00/srcs/Fixed.cpp	/^Fixed::Fixed(Fixed const & src)$/;"	f	class:Fixed
+Fixed	Mod02/ex00/srcs/Fixed.cpp	/^Fixed::Fixed(void)$/;"	f	class:Fixed
+Fixed	Mod02/ex01/includes/Fixed.hpp	/^class Fixed$/;"	c
+Fixed	Mod02/ex01/srcs/Fixed.cpp	/^Fixed::Fixed(Fixed const & src)$/;"	f	class:Fixed
+Fixed	Mod02/ex01/srcs/Fixed.cpp	/^Fixed::Fixed(float const & f)$/;"	f	class:Fixed
+Fixed	Mod02/ex01/srcs/Fixed.cpp	/^Fixed::Fixed(int const & i)$/;"	f	class:Fixed
+Fixed	Mod02/ex01/srcs/Fixed.cpp	/^Fixed::Fixed(void)$/;"	f	class:Fixed
+Fixed	Mod02/ex02/includes/Fixed.hpp	/^class Fixed$/;"	c
+Fixed	Mod02/ex02/srcs/Fixed.cpp	/^Fixed::Fixed(Fixed const & src)$/;"	f	class:Fixed
+Fixed	Mod02/ex02/srcs/Fixed.cpp	/^Fixed::Fixed(float const & f)$/;"	f	class:Fixed
+Fixed	Mod02/ex02/srcs/Fixed.cpp	/^Fixed::Fixed(int const & i)$/;"	f	class:Fixed
+Fixed	Mod02/ex02/srcs/Fixed.cpp	/^Fixed::Fixed(void)$/;"	f	class:Fixed
+Fixed	Mod02/ex03/includes/Fixed.hpp	/^class Fixed$/;"	c
+Fixed	Mod02/ex03/srcs/Fixed.cpp	/^Fixed::Fixed(Fixed const & src)$/;"	f	class:Fixed
+Fixed	Mod02/ex03/srcs/Fixed.cpp	/^Fixed::Fixed(float const & f)$/;"	f	class:Fixed
+Fixed	Mod02/ex03/srcs/Fixed.cpp	/^Fixed::Fixed(int const & i)$/;"	f	class:Fixed
+Fixed	Mod02/ex03/srcs/Fixed.cpp	/^Fixed::Fixed(void)$/;"	f	class:Fixed
+GREEN	Mod03/ex00/includes/ClapTrap.hpp	/^# define GREEN /;"	d
+GREEN	Mod03/ex01/includes/ClapTrap.hpp	/^# define GREEN /;"	d
+HARL_HPP	Mod01/ex05/includes/Harl.hpp	/^#define HARL_HPP$/;"	d
+HARL_HPP	Mod01/ex06/includes/Harl.hpp	/^#define HARL_HPP$/;"	d
+HUMANA_HPP	Mod01/ex03/includes/HumanA.hpp	/^#define HUMANA_HPP$/;"	d
+HUMANB_HPP	Mod01/ex03/includes/HumanB.hpp	/^#define HUMANB_HPP$/;"	d
+Harl	Mod01/ex05/includes/Harl.hpp	/^class	Harl$/;"	c
+Harl	Mod01/ex05/srcs/Harl.cpp	/^Harl::Harl(void)$/;"	f	class:Harl
+Harl	Mod01/ex06/includes/Harl.hpp	/^class	Harl$/;"	c
+Harl	Mod01/ex06/srcs/Harl.cpp	/^Harl::Harl(void)$/;"	f	class:Harl
+HumanA	Mod01/ex03/includes/HumanA.hpp	/^class HumanA$/;"	c
+HumanA	Mod01/ex03/srcs/HumanA.cpp	/^HumanA::HumanA(std::string n, Weapon &w) : _name(n),_weapon(w)$/;"	f	class:HumanA
+HumanB	Mod01/ex03/includes/HumanB.hpp	/^class HumanB$/;"	c
+HumanB	Mod01/ex03/srcs/HumanB.cpp	/^HumanB::HumanB(std::string n) : _name(n)$/;"	f	class:HumanB
 INCDIR	Mod00/ex01/Makefile	/^INCDIR = includes\/$/;"	m
 INCDIR	Mod00/ex02/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod01/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod01/ex00/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod01/ex01/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod01/ex02/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod01/ex03/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod01/ex04/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod01/ex05/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod01/ex06/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod02/ex00/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod02/ex01/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod02/ex02/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod02/ex03/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod03/ex00/Makefile	/^INCDIR = includes\/$/;"	m
+INCDIR	Mod03/ex01/Makefile	/^INCDIR = includes\/$/;"	m
 NAME	Mod00/ex00/Makefile	/^NAME = megaphone$/;"	m
 NAME	Mod00/ex01/Makefile	/^NAME = phonebook$/;"	m
 NAME	Mod00/ex02/Makefile	/^NAME = accounts$/;"	m
+NAME	Mod01/Makefile	/^NAME = phonebook$/;"	m
+NAME	Mod01/ex00/Makefile	/^NAME = zombie$/;"	m
+NAME	Mod01/ex01/Makefile	/^NAME = zombie$/;"	m
+NAME	Mod01/ex02/Makefile	/^NAME = brain$/;"	m
+NAME	Mod01/ex03/Makefile	/^NAME = weapon$/;"	m
+NAME	Mod01/ex04/Makefile	/^NAME = filestream$/;"	m
+NAME	Mod01/ex05/Makefile	/^NAME = Harl$/;"	m
+NAME	Mod01/ex06/Makefile	/^NAME = Harlfilter$/;"	m
+NAME	Mod02/ex00/Makefile	/^NAME = Fixed$/;"	m
+NAME	Mod02/ex01/Makefile	/^NAME = Fixed$/;"	m
+NAME	Mod02/ex02/Makefile	/^NAME = Fixed$/;"	m
+NAME	Mod02/ex03/Makefile	/^NAME = BSP$/;"	m
+NAME	Mod03/ex00/Makefile	/^NAME = ClapTrap$/;"	m
+NAME	Mod03/ex01/Makefile	/^NAME = ClapTrap$/;"	m
+NORMAL	Mod03/ex00/includes/ClapTrap.hpp	/^# define NORMAL /;"	d
+NORMAL	Mod03/ex01/includes/ClapTrap.hpp	/^# define NORMAL /;"	d
 OBJ	Mod00/ex00/Makefile	/^OBJ = $(SRC:.cpp=.o)$/;"	m
 OBJ	Mod00/ex01/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
 OBJ	Mod00/ex02/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod01/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod01/ex00/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod01/ex01/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod01/ex02/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod01/ex03/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod01/ex04/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod01/ex05/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod01/ex06/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod02/ex00/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod02/ex01/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod02/ex02/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod02/ex03/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod03/ex00/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJ	Mod03/ex01/Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
 OBJDIR	Mod00/ex01/Makefile	/^OBJDIR = bin\/$/;"	m
 OBJDIR	Mod00/ex02/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod01/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod01/ex00/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod01/ex01/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod01/ex02/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod01/ex03/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod01/ex04/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod01/ex05/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod01/ex06/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod02/ex00/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod02/ex01/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod02/ex02/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod02/ex03/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod03/ex00/Makefile	/^OBJDIR = bin\/$/;"	m
+OBJDIR	Mod03/ex01/Makefile	/^OBJDIR = bin\/$/;"	m
 PHONEBOOK_HPP	Mod00/ex01/includes/PhoneBook.hpp	/^# define PHONEBOOK_HPP /;"	d
+POINT_HPP	Mod02/ex03/includes/Point.hpp	/^#define POINT_HPP /;"	d
 PhoneBook	Mod00/ex01/includes/PhoneBook.hpp	/^class	PhoneBook$/;"	c
 PhoneBook	Mod00/ex01/srcs/PhoneBook.cpp	/^PhoneBook::PhoneBook ( void ) {$/;"	f	class:PhoneBook
+Point	Mod02/ex03/includes/Point.hpp	/^class Point$/;"	c
+Point	Mod02/ex03/srcs/Point.cpp	/^Point::Point(Point const &src): _x(src.getX()), _y(src.getY())$/;"	f	class:Point
+Point	Mod02/ex03/srcs/Point.cpp	/^Point::Point(const float &a, const float &b) : _x(a),_y(b)$/;"	f	class:Point
+Point	Mod02/ex03/srcs/Point.cpp	/^Point::Point(void) : _x(0),_y(0)$/;"	f	class:Point
+RED	Mod03/ex00/includes/ClapTrap.hpp	/^# define RED /;"	d
+RED	Mod03/ex01/includes/ClapTrap.hpp	/^# define RED /;"	d
+REPLACEFILE	Mod01/ex04/Makefile	/^REPLACEFILE = $(addprefix $(TESTDIR), $(TEST))$/;"	m
 RM	Mod00/ex00/Makefile	/^RM = rm -f$/;"	m
 RM	Mod00/ex01/Makefile	/^RM = rm -f$/;"	m
 RM	Mod00/ex02/Makefile	/^RM = rm -f$/;"	m
+RM	Mod01/Makefile	/^RM = rm -f$/;"	m
+RM	Mod01/ex00/Makefile	/^RM = rm -f$/;"	m
+RM	Mod01/ex01/Makefile	/^RM = rm -f$/;"	m
+RM	Mod01/ex02/Makefile	/^RM = rm -f$/;"	m
+RM	Mod01/ex03/Makefile	/^RM = rm -f$/;"	m
+RM	Mod01/ex04/Makefile	/^RM = rm -f$/;"	m
+RM	Mod01/ex05/Makefile	/^RM = rm -f$/;"	m
+RM	Mod01/ex06/Makefile	/^RM = rm -f$/;"	m
+RM	Mod02/ex00/Makefile	/^RM = rm -f$/;"	m
+RM	Mod02/ex01/Makefile	/^RM = rm -f$/;"	m
+RM	Mod02/ex02/Makefile	/^RM = rm -f$/;"	m
+RM	Mod02/ex03/Makefile	/^RM = rm -f$/;"	m
+RM	Mod03/ex00/Makefile	/^RM = rm -f$/;"	m
+RM	Mod03/ex01/Makefile	/^RM = rm -f$/;"	m
+SCAV	Mod03/ex00/includes/ClapTrap.hpp	/^# define SCAV /;"	d
+SCAV	Mod03/ex01/includes/ClapTrap.hpp	/^# define SCAV /;"	d
+SCAVTRAP_HPP	Mod03/ex01/includes/ScavTrap.hpp	/^#define SCAVTRAP_HPP /;"	d
 SRC	Mod00/ex00/Makefile	/^SRC = megaphone.cpp$/;"	m
 SRC	Mod00/ex01/Makefile	/^SRC = Contact.cpp PhoneBook.cpp main.cpp$/;"	m
 SRC	Mod00/ex02/Makefile	/^SRC = Account.cpp test.cpp$/;"	m
+SRC	Mod01/Makefile	/^SRC = Contact.cpp PhoneBook.cpp main.cpp$/;"	m
+SRC	Mod01/ex00/Makefile	/^SRC = Zombie.cpp main.cpp newZombie.cpp randomChump.cpp$/;"	m
+SRC	Mod01/ex01/Makefile	/^SRC = Zombie.cpp main.cpp zombieHorde.cpp$/;"	m
+SRC	Mod01/ex02/Makefile	/^SRC = main.cpp$/;"	m
+SRC	Mod01/ex03/Makefile	/^SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp$/;"	m
+SRC	Mod01/ex04/Makefile	/^SRC = main.cpp$/;"	m
+SRC	Mod01/ex05/Makefile	/^SRC = main.cpp Harl.cpp$/;"	m
+SRC	Mod01/ex06/Makefile	/^SRC = main.cpp Harl.cpp$/;"	m
+SRC	Mod02/ex00/Makefile	/^SRC = main.cpp Fixed.cpp$/;"	m
+SRC	Mod02/ex01/Makefile	/^SRC = main.cpp Fixed.cpp$/;"	m
+SRC	Mod02/ex02/Makefile	/^SRC = main.cpp Fixed.cpp$/;"	m
+SRC	Mod02/ex03/Makefile	/^SRC = main.cpp Fixed.cpp Point.cpp bsp.cpp$/;"	m
+SRC	Mod03/ex00/Makefile	/^SRC = main.cpp ClapTrap.cpp$/;"	m
+SRC	Mod03/ex01/Makefile	/^SRC = main.cpp ClapTrap.cpp$/;"	m
 SRCDIR	Mod00/ex01/Makefile	/^SRCDIR = srcs\/$/;"	m
 SRCDIR	Mod00/ex02/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod01/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod01/ex00/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod01/ex01/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod01/ex02/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod01/ex03/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod01/ex04/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod01/ex05/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod01/ex06/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod02/ex00/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod02/ex01/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod02/ex02/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod02/ex03/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod03/ex00/Makefile	/^SRCDIR = srcs\/$/;"	m
+SRCDIR	Mod03/ex01/Makefile	/^SRCDIR = srcs\/$/;"	m
+ScavTrap	Mod03/ex01/includes/ScavTrap.hpp	/^class ScavTrap : public ClapTrap$/;"	c
+ScavTrap	Mod03/ex01/srcs/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const & src)$/;"	f	class:ScavTrap
+ScavTrap	Mod03/ex01/srcs/ScavTrap.cpp	/^ScavTrap::ScavTrap(std::string n) : _name(n),_HP(10),_MP(10),_AD(0)$/;"	f	class:ScavTrap
+ScavTrap	Mod03/ex01/srcs/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : _name("Random Name"),_HP(10),_MP(10),_AD(0)$/;"	f	class:ScavTrap
+TEST	Mod01/ex04/Makefile	/^TEST = file.replace emptyfile.replace lilfile.replace$/;"	m
+TESTDIR	Mod01/ex04/Makefile	/^TESTDIR = test\/$/;"	m
+WEAPON_HPP	Mod01/ex03/includes/Weapon.hpp	/^#define WEAPON_HPP$/;"	d
+Weapon	Mod01/ex03/includes/Weapon.hpp	/^class Weapon$/;"	c
+Weapon	Mod01/ex03/srcs/Weapon.cpp	/^Weapon::Weapon( void )$/;"	f	class:Weapon
+Weapon	Mod01/ex03/srcs/Weapon.cpp	/^Weapon::Weapon(std::string str) : _type(str)$/;"	f	class:Weapon
+YELLOW	Mod03/ex00/includes/ClapTrap.hpp	/^# define YELLOW /;"	d
+YELLOW	Mod03/ex01/includes/ClapTrap.hpp	/^# define YELLOW /;"	d
+ZOMBIE_HPP	Mod01/ex00/includes/Zombie.hpp	/^#define ZOMBIE_HPP /;"	d
+ZOMBIE_HPP	Mod01/ex01/includes/Zombie.hpp	/^#define ZOMBIE_HPP /;"	d
+Zombie	Mod01/ex00/includes/Zombie.hpp	/^class	Zombie$/;"	c
+Zombie	Mod01/ex00/srcs/Zombie.cpp	/^Zombie::Zombie( std::string s ) : _Name(s)$/;"	f	class:Zombie
+Zombie	Mod01/ex01/includes/Zombie.hpp	/^class	Zombie$/;"	c
+Zombie	Mod01/ex01/srcs/Zombie.cpp	/^Zombie::Zombie( std::string s ) : _Name(s)$/;"	f	class:Zombie
+Zombie	Mod01/ex01/srcs/Zombie.cpp	/^Zombie::Zombie( void )$/;"	f	class:Zombie
+_AD	Mod03/ex00/includes/ClapTrap.hpp	/^		int	_AD;$/;"	m	class:ClapTrap	typeref:typename:int
+_AD	Mod03/ex01/includes/ClapTrap.hpp	/^		int	_AD;$/;"	m	class:ClapTrap	typeref:typename:int
+_AD	Mod03/ex01/includes/ScavTrap.hpp	/^		int	_AD;$/;"	m	class:ScavTrap	typeref:typename:int
 _DarkestSecret	Mod00/ex01/includes/Contact.hpp	/^		std::string	_DarkestSecret;$/;"	m	class:Contact	typeref:typename:std::string
 _FirstName	Mod00/ex01/includes/Contact.hpp	/^		std::string	_FirstName;$/;"	m	class:Contact	typeref:typename:std::string
+_HP	Mod03/ex00/includes/ClapTrap.hpp	/^		int	_HP;$/;"	m	class:ClapTrap	typeref:typename:int
+_HP	Mod03/ex01/includes/ClapTrap.hpp	/^		int	_HP;$/;"	m	class:ClapTrap	typeref:typename:int
+_HP	Mod03/ex01/includes/ScavTrap.hpp	/^		int	_HP;$/;"	m	class:ScavTrap	typeref:typename:int
 _LastName	Mod00/ex01/includes/Contact.hpp	/^		std::string	_LastName;$/;"	m	class:Contact	typeref:typename:std::string
+_MP	Mod03/ex00/includes/ClapTrap.hpp	/^		int	_MP;$/;"	m	class:ClapTrap	typeref:typename:int
+_MP	Mod03/ex01/includes/ClapTrap.hpp	/^		int	_MP;$/;"	m	class:ClapTrap	typeref:typename:int
+_MP	Mod03/ex01/includes/ScavTrap.hpp	/^		int	_MP;$/;"	m	class:ScavTrap	typeref:typename:int
+_Name	Mod01/ex00/includes/Zombie.hpp	/^		std::string	_Name;$/;"	m	class:Zombie	typeref:typename:std::string
+_Name	Mod01/ex01/includes/Zombie.hpp	/^		std::string	_Name;$/;"	m	class:Zombie	typeref:typename:std::string
 _NickName	Mod00/ex01/includes/Contact.hpp	/^		std::string	_NickName;$/;"	m	class:Contact	typeref:typename:std::string
 _PhoneNumber	Mod00/ex01/includes/Contact.hpp	/^		std::string	_PhoneNumber;$/;"	m	class:Contact	typeref:typename:std::string
 __ACCOUNT_H__	Mod00/ex02/includes/Account.hpp	/^#define __ACCOUNT_H__$/;"	d
@@ -56,10 +311,23 @@ _accountIndex	Mod00/ex02/includes/Account.hpp	/^	int				_accountIndex;$/;"	m	cla
 _amount	Mod00/ex02/includes/Account.hpp	/^	int				_amount;$/;"	m	class:Account	typeref:typename:int
 _displayTimestamp	Mod00/ex02/srcs/Account.cpp	/^void Account::_displayTimestamp(void)$/;"	f	class:Account	typeref:typename:void
 _list	Mod00/ex01/includes/PhoneBook.hpp	/^		Contact	_list[8];$/;"	m	class:PhoneBook	typeref:typename:Contact[8]
+_name	Mod01/ex03/includes/HumanA.hpp	/^		std::string	_name;$/;"	m	class:HumanA	typeref:typename:std::string
+_name	Mod01/ex03/includes/HumanB.hpp	/^		std::string	_name;$/;"	m	class:HumanB	typeref:typename:std::string
+_name	Mod03/ex00/includes/ClapTrap.hpp	/^		std::string _name;$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	Mod03/ex01/includes/ClapTrap.hpp	/^		std::string _name;$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	Mod03/ex01/includes/ScavTrap.hpp	/^		std::string _name;$/;"	m	class:ScavTrap	typeref:typename:std::string
 _nbAccounts	Mod00/ex02/includes/Account.hpp	/^	static int	_nbAccounts;$/;"	m	class:Account	typeref:typename:int
 _nbAccounts	Mod00/ex02/srcs/Account.cpp	/^int	Account::_nbAccounts = 0;$/;"	m	class:Account	typeref:typename:int
 _nbDeposits	Mod00/ex02/includes/Account.hpp	/^	int				_nbDeposits;$/;"	m	class:Account	typeref:typename:int
+_nbFract	Mod02/ex00/includes/Fixed.hpp	/^		static const int	_nbFract = 8;$/;"	m	class:Fixed	typeref:typename:const int
+_nbFract	Mod02/ex01/includes/Fixed.hpp	/^		static const int	_nbFract = 8;$/;"	m	class:Fixed	typeref:typename:const int
+_nbFract	Mod02/ex02/includes/Fixed.hpp	/^		static const int	_nbFract = 8;$/;"	m	class:Fixed	typeref:typename:const int
+_nbFract	Mod02/ex03/includes/Fixed.hpp	/^		static const int	_nbFract = 8;$/;"	m	class:Fixed	typeref:typename:const int
 _nbWithdrawals	Mod00/ex02/includes/Account.hpp	/^	int				_nbWithdrawals;$/;"	m	class:Account	typeref:typename:int
+_rawBits	Mod02/ex00/includes/Fixed.hpp	/^		int	_rawBits;$/;"	m	class:Fixed	typeref:typename:int
+_rawBits	Mod02/ex01/includes/Fixed.hpp	/^		int	_rawBits;$/;"	m	class:Fixed	typeref:typename:int
+_rawBits	Mod02/ex02/includes/Fixed.hpp	/^		int	_rawBits;$/;"	m	class:Fixed	typeref:typename:int
+_rawBits	Mod02/ex03/includes/Fixed.hpp	/^		int	_rawBits;$/;"	m	class:Fixed	typeref:typename:int
 _size	Mod00/ex01/includes/PhoneBook.hpp	/^		int		_size;$/;"	m	class:PhoneBook	typeref:typename:int
 _totalAmount	Mod00/ex02/includes/Account.hpp	/^	static int	_totalAmount;$/;"	m	class:Account	typeref:typename:int
 _totalAmount	Mod00/ex02/srcs/Account.cpp	/^int	Account::_totalAmount = 0;$/;"	m	class:Account	typeref:typename:int
@@ -67,49 +335,279 @@ _totalNbDeposits	Mod00/ex02/includes/Account.hpp	/^	static int	_totalNbDeposits;
 _totalNbDeposits	Mod00/ex02/srcs/Account.cpp	/^int	Account::_totalNbDeposits = 0;$/;"	m	class:Account	typeref:typename:int
 _totalNbWithdrawals	Mod00/ex02/includes/Account.hpp	/^	static int	_totalNbWithdrawals;$/;"	m	class:Account	typeref:typename:int
 _totalNbWithdrawals	Mod00/ex02/srcs/Account.cpp	/^int	Account::_totalNbWithdrawals = 0;$/;"	m	class:Account	typeref:typename:int
+_type	Mod01/ex03/includes/Weapon.hpp	/^		std::string	_type;$/;"	m	class:Weapon	typeref:typename:std::string
+_weapon	Mod01/ex03/includes/HumanA.hpp	/^		Weapon&	_weapon;$/;"	m	class:HumanA	typeref:typename:Weapon &
+_weapon	Mod01/ex03/includes/HumanB.hpp	/^		Weapon	*_weapon;$/;"	m	class:HumanB	typeref:typename:Weapon *
+_x	Mod02/ex03/includes/Point.hpp	/^		Fixed	const _x;$/;"	m	class:Point	typeref:typename:Fixed const
+_y	Mod02/ex03/includes/Point.hpp	/^		Fixed	const _y;$/;"	m	class:Point	typeref:typename:Fixed const
 acc_int_t	Mod00/ex02/srcs/test.cpp	/^	typedef std::pair<accounts_t::iterator, ints_t::iterator> acc_int_t;$/;"	t	function:main	typeref:typename:std::pair<accounts_t::iterator,ints_t::iterator>	file:
 accounts_t	Mod00/ex02/srcs/test.cpp	/^	typedef std::vector<Account::t>							  accounts_t;$/;"	t	function:main	typeref:typename:std::vector<Account::t>	file:
 addContact	Mod00/ex01/srcs/PhoneBook.cpp	/^void PhoneBook::addContact ( void ) {$/;"	f	class:PhoneBook	typeref:typename:void
 all	Mod00/ex00/Makefile	/^all:		$(NAME)$/;"	t
 all	Mod00/ex01/Makefile	/^all:		$(NAME)$/;"	t
 all	Mod00/ex02/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod01/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod01/ex00/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod01/ex01/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod01/ex02/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod01/ex03/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod01/ex04/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod01/ex05/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod01/ex06/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod02/ex00/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod02/ex01/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod02/ex02/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod02/ex03/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod03/ex00/Makefile	/^all:		$(NAME)$/;"	t
+all	Mod03/ex01/Makefile	/^all:		$(NAME)$/;"	t
+announce	Mod01/ex00/srcs/Zombie.cpp	/^void	Zombie::announce( void )$/;"	f	class:Zombie	typeref:typename:void
+announce	Mod01/ex01/srcs/Zombie.cpp	/^void	Zombie::announce( void )$/;"	f	class:Zombie	typeref:typename:void
+attack	Mod01/ex03/srcs/HumanA.cpp	/^void	HumanA::attack(void) const$/;"	f	class:HumanA	typeref:typename:void
+attack	Mod01/ex03/srcs/HumanB.cpp	/^void	HumanB::attack(void) const$/;"	f	class:HumanB	typeref:typename:void
+attack	Mod03/ex00/srcs/ClapTrap.cpp	/^void ClapTrap::attack(std::string &target)$/;"	f	class:ClapTrap	typeref:typename:void
+attack	Mod03/ex01/srcs/ClapTrap.cpp	/^void ClapTrap::attack(std::string &target)$/;"	f	class:ClapTrap	typeref:typename:void
+attack	Mod03/ex01/srcs/ScavTrap.cpp	/^void ScavTrap::attack(std::string &target)$/;"	f	class:ScavTrap	typeref:typename:void
+beRepaired	Mod03/ex00/srcs/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount)$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	Mod03/ex01/srcs/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount)$/;"	f	class:ClapTrap	typeref:typename:void
+bsp	Mod02/ex03/srcs/bsp.cpp	/^bool bsp(Point const a, Point const b, Point const c, Point point)$/;"	f	typeref:typename:bool
 checkAmount	Mod00/ex02/srcs/Account.cpp	/^int Account::checkAmount(void) const$/;"	f	class:Account	typeref:typename:int
 clean	Mod00/ex00/Makefile	/^clean:	$/;"	t
 clean	Mod00/ex01/Makefile	/^clean:	$/;"	t
 clean	Mod00/ex02/Makefile	/^clean:	$/;"	t
+clean	Mod01/Makefile	/^clean:	$/;"	t
+clean	Mod01/ex00/Makefile	/^clean:	$/;"	t
+clean	Mod01/ex01/Makefile	/^clean:	$/;"	t
+clean	Mod01/ex02/Makefile	/^clean:	$/;"	t
+clean	Mod01/ex03/Makefile	/^clean:	$/;"	t
+clean	Mod01/ex04/Makefile	/^clean:	$/;"	t
+clean	Mod01/ex05/Makefile	/^clean:	$/;"	t
+clean	Mod01/ex06/Makefile	/^clean:	$/;"	t
+clean	Mod02/ex00/Makefile	/^clean:	$/;"	t
+clean	Mod02/ex01/Makefile	/^clean:	$/;"	t
+clean	Mod02/ex02/Makefile	/^clean:	$/;"	t
+clean	Mod02/ex03/Makefile	/^clean:	$/;"	t
+clean	Mod03/ex00/Makefile	/^clean:	$/;"	t
+clean	Mod03/ex01/Makefile	/^clean:	$/;"	t
+command	Mod02/ex01/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/Fixed.cpp -o bin\/Fix/;"	s	object:1
+command	Mod02/ex01/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/main.cpp -o bin\/main/;"	s	object:0
+command	Mod02/ex02/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/Fixed.cpp -o bin\/Fix/;"	s	object:1
+command	Mod02/ex02/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/main.cpp -o bin\/main/;"	s	object:0
+command	Mod02/ex03/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/Fixed.cpp -o bin\/Fix/;"	s	object:1
+command	Mod02/ex03/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/main.cpp -o bin\/main/;"	s	object:0
+command	Mod03/ex00/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/ClapTrap.cpp -o bin\//;"	s	object:1
+command	Mod03/ex00/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/main.cpp -o bin\/main/;"	s	object:0
+command	Mod03/ex01/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/ClapTrap.cpp -o bin\//;"	s	object:1
+command	Mod03/ex01/.cache/compile_commands.json	/^    "command": "c++ -Iincludes\/ -Wall -Wextra -Werror -std=c++98 -c srcs\/main.cpp -o bin\/main/;"	s	object:0
+complain	Mod01/ex05/srcs/Harl.cpp	/^void	Harl::complain(std::string level)$/;"	f	class:Harl	typeref:typename:void
+complain	Mod01/ex06/srcs/Harl.cpp	/^void	Harl::complain(std::string level)$/;"	f	class:Harl	typeref:typename:void
+contactPrint	Mod00/ex01/srcs/PhoneBook.cpp	/^void PhoneBook::contactPrint ( int i ) const$/;"	f	class:PhoneBook	typeref:typename:void
+debug	Mod01/ex05/srcs/Harl.cpp	/^void	Harl::debug(void)$/;"	f	class:Harl	typeref:typename:void
+debug	Mod01/ex06/srcs/Harl.cpp	/^void	Harl::debug(void)$/;"	f	class:Harl	typeref:typename:void
+det	Mod02/ex03/srcs/Point.cpp	/^Fixed	det(Point const &a, Point const &b)$/;"	f	typeref:typename:Fixed
+directory	Mod02/ex01/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod02\/ex01",$/;"	s	object:0
+directory	Mod02/ex01/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod02\/ex01",$/;"	s	object:1
+directory	Mod02/ex02/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod02\/ex02",$/;"	s	object:0
+directory	Mod02/ex02/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod02\/ex02",$/;"	s	object:1
+directory	Mod02/ex03/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod02\/ex03",$/;"	s	object:0
+directory	Mod02/ex03/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod02\/ex03",$/;"	s	object:1
+directory	Mod03/ex00/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod03\/ex00",$/;"	s	object:0
+directory	Mod03/ex00/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod03\/ex00",$/;"	s	object:1
+directory	Mod03/ex01/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod03\/ex01",$/;"	s	object:0
+directory	Mod03/ex01/.cache/compile_commands.json	/^    "directory": "\/data\/data\/com.termux\/files\/home\/storage\/CPP\/Mod03\/ex01",$/;"	s	object:1
 displayAccountsInfos	Mod00/ex02/srcs/Account.cpp	/^void Account::displayAccountsInfos(void)$/;"	f	class:Account	typeref:typename:void
 displayStatus	Mod00/ex02/srcs/Account.cpp	/^void Account::displayStatus(void) const$/;"	f	class:Account	typeref:typename:void
+error	Mod01/ex05/srcs/Harl.cpp	/^void	Harl::error(void)$/;"	f	class:Harl	typeref:typename:void
+error	Mod01/ex06/srcs/Harl.cpp	/^void	Harl::error(void)$/;"	f	class:Harl	typeref:typename:void
 fclean	Mod00/ex00/Makefile	/^fclean:		clean$/;"	t
 fclean	Mod00/ex01/Makefile	/^fclean:			clean$/;"	t
 fclean	Mod00/ex02/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod01/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod01/ex00/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod01/ex01/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod01/ex02/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod01/ex03/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod01/ex04/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod01/ex05/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod01/ex06/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod02/ex00/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod02/ex01/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod02/ex02/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod02/ex03/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod03/ex00/Makefile	/^fclean:			clean$/;"	t
+fclean	Mod03/ex01/Makefile	/^fclean:			clean$/;"	t
+file	Mod02/ex01/.cache/compile_commands.json	/^    "file": "srcs\/Fixed.cpp"$/;"	s	object:1
+file	Mod02/ex01/.cache/compile_commands.json	/^    "file": "srcs\/main.cpp"$/;"	s	object:0
+file	Mod02/ex02/.cache/compile_commands.json	/^    "file": "srcs\/Fixed.cpp"$/;"	s	object:1
+file	Mod02/ex02/.cache/compile_commands.json	/^    "file": "srcs\/main.cpp"$/;"	s	object:0
+file	Mod02/ex03/.cache/compile_commands.json	/^    "file": "srcs\/Fixed.cpp"$/;"	s	object:1
+file	Mod02/ex03/.cache/compile_commands.json	/^    "file": "srcs\/main.cpp"$/;"	s	object:0
+file	Mod03/ex00/.cache/compile_commands.json	/^    "file": "srcs\/ClapTrap.cpp"$/;"	s	object:1
+file	Mod03/ex00/.cache/compile_commands.json	/^    "file": "srcs\/main.cpp"$/;"	s	object:0
+file	Mod03/ex01/.cache/compile_commands.json	/^    "file": "srcs\/ClapTrap.cpp"$/;"	s	object:1
+file	Mod03/ex01/.cache/compile_commands.json	/^    "file": "srcs\/main.cpp"$/;"	s	object:0
 fillContact	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::fillContact(void)$/;"	f	class:Contact	typeref:typename:void
+funcPtr	Mod01/ex05/includes/Harl.hpp	/^		typedef	void (Harl::*funcPtr)(void);$/;"	t	class:Harl	typeref:typename:void (Harl::*)(void)
+funcPtr	Mod01/ex06/includes/Harl.hpp	/^		typedef	void (Harl::*funcPtr)(void);$/;"	t	class:Harl	typeref:typename:void (Harl::*)(void)
+getAD	Mod03/ex00/srcs/ClapTrap.cpp	/^int	ClapTrap::getAD(void) const$/;"	f	class:ClapTrap	typeref:typename:int
+getAD	Mod03/ex01/srcs/ClapTrap.cpp	/^int	ClapTrap::getAD(void) const$/;"	f	class:ClapTrap	typeref:typename:int
 getDarkestSecret	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getDarkestSecret( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
 getFirstName	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getFirstName( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
+getHP	Mod03/ex00/srcs/ClapTrap.cpp	/^int	ClapTrap::getHP(void) const$/;"	f	class:ClapTrap	typeref:typename:int
+getHP	Mod03/ex01/srcs/ClapTrap.cpp	/^int	ClapTrap::getHP(void) const$/;"	f	class:ClapTrap	typeref:typename:int
 getLastName	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getLastName( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
+getMP	Mod03/ex00/srcs/ClapTrap.cpp	/^int	ClapTrap::getMP(void) const$/;"	f	class:ClapTrap	typeref:typename:int
+getMP	Mod03/ex01/srcs/ClapTrap.cpp	/^int	ClapTrap::getMP(void) const$/;"	f	class:ClapTrap	typeref:typename:int
+getName	Mod03/ex00/srcs/ClapTrap.cpp	/^std::string	ClapTrap::getName(void) const$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	Mod03/ex01/srcs/ClapTrap.cpp	/^std::string	ClapTrap::getName(void) const$/;"	f	class:ClapTrap	typeref:typename:std::string
 getNbAccounts	Mod00/ex02/srcs/Account.cpp	/^int	 Account::getNbAccounts(void)$/;"	f	class:Account	typeref:typename:int
 getNbDeposits	Mod00/ex02/srcs/Account.cpp	/^int	 Account::getNbDeposits(void)$/;"	f	class:Account	typeref:typename:int
 getNbWithdrawals	Mod00/ex02/srcs/Account.cpp	/^int	 Account::getNbWithdrawals(void)$/;"	f	class:Account	typeref:typename:int
 getNickName	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getNickName( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
 getPhoneNumber	Mod00/ex01/srcs/Contact.cpp	/^std::string	Contact::getPhoneNumber( void ) const {$/;"	f	class:Contact	typeref:typename:std::string
+getRawBits	Mod02/ex00/srcs/Fixed.cpp	/^int	Fixed::getRawBits(void) const$/;"	f	class:Fixed	typeref:typename:int
+getRawBits	Mod02/ex01/srcs/Fixed.cpp	/^int	Fixed::getRawBits(void) const$/;"	f	class:Fixed	typeref:typename:int
+getRawBits	Mod02/ex02/srcs/Fixed.cpp	/^int	Fixed::getRawBits(void) const$/;"	f	class:Fixed	typeref:typename:int
+getRawBits	Mod02/ex03/srcs/Fixed.cpp	/^int	Fixed::getRawBits(void) const$/;"	f	class:Fixed	typeref:typename:int
+getSize	Mod00/ex01/srcs/PhoneBook.cpp	/^int	PhoneBook::getSize() const$/;"	f	class:PhoneBook	typeref:typename:int
 getTotalAmount	Mod00/ex02/srcs/Account.cpp	/^int	 Account::getTotalAmount(void)$/;"	f	class:Account	typeref:typename:int
+getType	Mod01/ex03/srcs/Weapon.cpp	/^std::string const & Weapon::getType(void) const$/;"	f	class:Weapon	typeref:typename:std::string const &
+getX	Mod02/ex03/srcs/Point.cpp	/^Fixed	Point::getX(void) const$/;"	f	class:Point	typeref:typename:Fixed
+getY	Mod02/ex03/srcs/Point.cpp	/^Fixed	Point::getY(void) const$/;"	f	class:Point	typeref:typename:Fixed
+info	Mod01/ex05/srcs/Harl.cpp	/^void	Harl::info(void)$/;"	f	class:Harl	typeref:typename:void
+info	Mod01/ex06/srcs/Harl.cpp	/^void	Harl::info(void)$/;"	f	class:Harl	typeref:typename:void
 ints_t	Mod00/ex02/srcs/test.cpp	/^	typedef std::vector<int>								  ints_t;$/;"	t	function:main	typeref:typename:std::vector<int>	file:
 main	Mod00/ex00/megaphone.cpp	/^int	main(int ac, char **av)$/;"	f	typeref:typename:int
 main	Mod00/ex01/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
 main	Mod00/ex02/srcs/test.cpp	/^int		main( void ) {$/;"	f	typeref:typename:int
+main	Mod01/ex00/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
+main	Mod01/ex01/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
+main	Mod01/ex02/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
+main	Mod01/ex03/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
+main	Mod01/ex04/srcs/main.cpp	/^int	main(int ac, char **av)$/;"	f	typeref:typename:int
+main	Mod01/ex05/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
+main	Mod01/ex06/srcs/main.cpp	/^int	main(int ac, char **av)$/;"	f	typeref:typename:int
+main	Mod02/ex00/srcs/main.cpp	/^int main(void)$/;"	f	typeref:typename:int
+main	Mod02/ex01/srcs/main.cpp	/^int main(void)$/;"	f	typeref:typename:int
+main	Mod02/ex02/srcs/main.cpp	/^int main(void)$/;"	f	typeref:typename:int
+main	Mod02/ex03/srcs/main.cpp	/^int main(void)$/;"	f	typeref:typename:int
+main	Mod03/ex00/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
+main	Mod03/ex01/srcs/main.cpp	/^int	main(void)$/;"	f	typeref:typename:int
 makeDeposit	Mod00/ex02/srcs/Account.cpp	/^void Account::makeDeposit(int deposit)$/;"	f	class:Account	typeref:typename:void
 makeWithdrawal	Mod00/ex02/srcs/Account.cpp	/^bool Account::makeWithdrawal(int withdrawal)$/;"	f	class:Account	typeref:typename:bool
+max	Mod02/ex02/srcs/Fixed.cpp	/^Fixed & Fixed::max(Fixed & a, Fixed & b)$/;"	f	class:Fixed	typeref:typename:Fixed &
+max	Mod02/ex02/srcs/Fixed.cpp	/^Fixed const & Fixed::max(Fixed const & a, Fixed const & b)$/;"	f	class:Fixed	typeref:typename:Fixed const &
+max	Mod02/ex03/srcs/Fixed.cpp	/^Fixed & Fixed::max(Fixed & a, Fixed & b)$/;"	f	class:Fixed	typeref:typename:Fixed &
+max	Mod02/ex03/srcs/Fixed.cpp	/^Fixed const & Fixed::max(Fixed const & a, Fixed const & b)$/;"	f	class:Fixed	typeref:typename:Fixed const &
+min	Mod02/ex02/srcs/Fixed.cpp	/^Fixed & Fixed::min(Fixed & a, Fixed & b)$/;"	f	class:Fixed	typeref:typename:Fixed &
+min	Mod02/ex02/srcs/Fixed.cpp	/^Fixed const & Fixed::min(Fixed const & a, Fixed const & b)$/;"	f	class:Fixed	typeref:typename:Fixed const &
+min	Mod02/ex03/srcs/Fixed.cpp	/^Fixed & Fixed::min(Fixed & a, Fixed & b)$/;"	f	class:Fixed	typeref:typename:Fixed &
+min	Mod02/ex03/srcs/Fixed.cpp	/^Fixed const & Fixed::min(Fixed const & a, Fixed const & b)$/;"	f	class:Fixed	typeref:typename:Fixed const &
+newZombie	Mod01/ex00/srcs/newZombie.cpp	/^Zombie*	newZombie( std::string s)$/;"	f	typeref:typename:Zombie *
+operator !=	Mod02/ex02/srcs/Fixed.cpp	/^bool Fixed::operator!=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator !=	Mod02/ex03/srcs/Fixed.cpp	/^bool Fixed::operator!=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator *	Mod02/ex02/srcs/Fixed.cpp	/^Fixed Fixed::operator*(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator *	Mod02/ex03/srcs/Fixed.cpp	/^Fixed Fixed::operator*(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator +	Mod02/ex02/srcs/Fixed.cpp	/^Fixed Fixed::operator+(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator +	Mod02/ex03/srcs/Fixed.cpp	/^Fixed Fixed::operator+(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator ++	Mod02/ex02/srcs/Fixed.cpp	/^Fixed & Fixed::operator++(void)$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator ++	Mod02/ex02/srcs/Fixed.cpp	/^Fixed Fixed::operator++(int)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator ++	Mod02/ex03/srcs/Fixed.cpp	/^Fixed & Fixed::operator++(void)$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator ++	Mod02/ex03/srcs/Fixed.cpp	/^Fixed Fixed::operator++(int)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator -	Mod02/ex02/srcs/Fixed.cpp	/^Fixed Fixed::operator-(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator -	Mod02/ex03/srcs/Fixed.cpp	/^Fixed Fixed::operator-(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator --	Mod02/ex02/srcs/Fixed.cpp	/^Fixed & Fixed::operator--(void)$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator --	Mod02/ex02/srcs/Fixed.cpp	/^Fixed Fixed::operator--(int)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator --	Mod02/ex03/srcs/Fixed.cpp	/^Fixed & Fixed::operator--(void)$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator --	Mod02/ex03/srcs/Fixed.cpp	/^Fixed Fixed::operator--(int)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator /	Mod02/ex02/srcs/Fixed.cpp	/^Fixed Fixed::operator\/(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator /	Mod02/ex03/srcs/Fixed.cpp	/^Fixed Fixed::operator\/(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator <	Mod02/ex02/srcs/Fixed.cpp	/^bool Fixed::operator<(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator <	Mod02/ex03/srcs/Fixed.cpp	/^bool Fixed::operator<(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator <<	Mod02/ex00/srcs/Fixed.cpp	/^std::ostream& operator<<(std::ostream & o, Fixed const & i)$/;"	f	typeref:typename:std::ostream &
+operator <<	Mod02/ex01/srcs/Fixed.cpp	/^std::ostream& operator<<(std::ostream & o, Fixed const & i)$/;"	f	typeref:typename:std::ostream &
+operator <<	Mod02/ex02/srcs/Fixed.cpp	/^std::ostream& operator<<(std::ostream & o, Fixed const & i)$/;"	f	typeref:typename:std::ostream &
+operator <<	Mod02/ex03/srcs/Fixed.cpp	/^std::ostream& operator<<(std::ostream & o, Fixed const & i)$/;"	f	typeref:typename:std::ostream &
+operator <<	Mod02/ex03/srcs/Point.cpp	/^std::ostream& operator<<(std::ostream & o, Point const & i)$/;"	f	typeref:typename:std::ostream &
+operator <<	Mod03/ex00/srcs/ClapTrap.cpp	/^std::ostream& operator<<(std::ostream & o, ClapTrap const & i)$/;"	f	typeref:typename:std::ostream &
+operator <<	Mod03/ex01/srcs/ClapTrap.cpp	/^std::ostream& operator<<(std::ostream & o, ClapTrap const & i)$/;"	f	typeref:typename:std::ostream &
+operator <=	Mod02/ex02/srcs/Fixed.cpp	/^bool Fixed::operator<=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator <=	Mod02/ex03/srcs/Fixed.cpp	/^bool Fixed::operator<=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator =	Mod02/ex00/srcs/Fixed.cpp	/^Fixed & Fixed::operator=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator =	Mod02/ex01/srcs/Fixed.cpp	/^Fixed & Fixed::operator=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator =	Mod02/ex02/srcs/Fixed.cpp	/^Fixed & Fixed::operator=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator =	Mod02/ex03/srcs/Fixed.cpp	/^Fixed & Fixed::operator=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator =	Mod03/ex00/srcs/ClapTrap.cpp	/^ClapTrap & ClapTrap::operator=(ClapTrap const & rhs)$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	Mod03/ex01/srcs/ClapTrap.cpp	/^ClapTrap & ClapTrap::operator=(ClapTrap const & rhs)$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator ==	Mod02/ex02/srcs/Fixed.cpp	/^bool Fixed::operator==(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator ==	Mod02/ex03/srcs/Fixed.cpp	/^bool Fixed::operator==(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator >	Mod02/ex02/srcs/Fixed.cpp	/^bool Fixed::operator>(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator >	Mod02/ex03/srcs/Fixed.cpp	/^bool Fixed::operator>(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator >=	Mod02/ex02/srcs/Fixed.cpp	/^bool Fixed::operator>=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
+operator >=	Mod02/ex03/srcs/Fixed.cpp	/^bool Fixed::operator>=(Fixed const & rhs)$/;"	f	class:Fixed	typeref:typename:bool
 print	Mod00/ex01/srcs/PhoneBook.cpp	/^void PhoneBook::print ( void ) const$/;"	f	class:PhoneBook	typeref:typename:void
 printAll	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::printAll(void) const$/;"	f	class:Contact	typeref:typename:void
+printSpec	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::printSpec(void) const$/;"	f	class:Contact	typeref:typename:void
+randomChump	Mod01/ex00/srcs/randomChump.cpp	/^void	randomChump( std::string s)$/;"	f	typeref:typename:void
 re	Mod00/ex00/Makefile	/^re:			fclean all$/;"	t
 re	Mod00/ex01/Makefile	/^re:			fclean all$/;"	t
 re	Mod00/ex02/Makefile	/^re:			fclean all$/;"	t
+re	Mod01/Makefile	/^re:			fclean all$/;"	t
+re	Mod01/ex00/Makefile	/^re:			fclean all$/;"	t
+re	Mod01/ex01/Makefile	/^re:			fclean all$/;"	t
+re	Mod01/ex02/Makefile	/^re:			fclean all$/;"	t
+re	Mod01/ex03/Makefile	/^re:			fclean all$/;"	t
+re	Mod01/ex04/Makefile	/^re:			fclean all$/;"	t
+re	Mod01/ex05/Makefile	/^re:			fclean all$/;"	t
+re	Mod01/ex06/Makefile	/^re:			fclean all$/;"	t
+re	Mod02/ex00/Makefile	/^re:			fclean all$/;"	t
+re	Mod02/ex01/Makefile	/^re:			fclean all$/;"	t
+re	Mod02/ex02/Makefile	/^re:			fclean all$/;"	t
+re	Mod02/ex03/Makefile	/^re:			fclean all$/;"	t
+re	Mod03/ex00/Makefile	/^re:			fclean all$/;"	t
+re	Mod03/ex01/Makefile	/^re:			fclean all$/;"	t
+setAD	Mod03/ex00/srcs/ClapTrap.cpp	/^void ClapTrap::setAD(unsigned int dmg)$/;"	f	class:ClapTrap	typeref:typename:void
+setAD	Mod03/ex01/srcs/ClapTrap.cpp	/^void ClapTrap::setAD(unsigned int dmg)$/;"	f	class:ClapTrap	typeref:typename:void
 setDarkestSecret	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setDarkestSecret( std::string D ) {$/;"	f	class:Contact	typeref:typename:void
 setFirstName	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setFirstName( std::string F ) {$/;"	f	class:Contact	typeref:typename:void
 setLastName	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setLastName( std::string L ) {$/;"	f	class:Contact	typeref:typename:void
+setName	Mod01/ex01/srcs/Zombie.cpp	/^void	Zombie::setName( std::string s )$/;"	f	class:Zombie	typeref:typename:void
 setNickName	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setNickName( std::string N ) {$/;"	f	class:Contact	typeref:typename:void
 setPhoneNumber	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::setPhoneNumber( std::string P ) {$/;"	f	class:Contact	typeref:typename:void
+setRawBits	Mod02/ex00/srcs/Fixed.cpp	/^void	Fixed::setRawBits(int const raw)$/;"	f	class:Fixed	typeref:typename:void
+setRawBits	Mod02/ex01/srcs/Fixed.cpp	/^void	Fixed::setRawBits(int const raw)$/;"	f	class:Fixed	typeref:typename:void
+setRawBits	Mod02/ex02/srcs/Fixed.cpp	/^void	Fixed::setRawBits(int const raw)$/;"	f	class:Fixed	typeref:typename:void
+setRawBits	Mod02/ex03/srcs/Fixed.cpp	/^void	Fixed::setRawBits(int const raw)$/;"	f	class:Fixed	typeref:typename:void
+setType	Mod01/ex03/srcs/Weapon.cpp	/^void	Weapon::setType(std::string const & str)$/;"	f	class:Weapon	typeref:typename:void
+setWeapon	Mod01/ex03/srcs/HumanB.cpp	/^void	HumanB::setWeapon(Weapon &w)$/;"	f	class:HumanB	typeref:typename:void
 t	Mod00/ex02/includes/Account.hpp	/^	typedef Account		t;$/;"	t	class:Account	typeref:typename:Account
+takeDmg	Mod03/ex00/srcs/ClapTrap.cpp	/^void ClapTrap::takeDmg(unsigned int amount)$/;"	f	class:ClapTrap	typeref:typename:void
+takeDmg	Mod03/ex01/srcs/ClapTrap.cpp	/^void ClapTrap::takeDmg(unsigned int amount)$/;"	f	class:ClapTrap	typeref:typename:void
+test	Mod01/ex04/Makefile	/^test:$/;"	t
+toFloat	Mod02/ex01/srcs/Fixed.cpp	/^float	Fixed::toFloat(void) const$/;"	f	class:Fixed	typeref:typename:float
+toFloat	Mod02/ex02/srcs/Fixed.cpp	/^float	Fixed::toFloat(void) const$/;"	f	class:Fixed	typeref:typename:float
+toFloat	Mod02/ex03/srcs/Fixed.cpp	/^float	Fixed::toFloat(void) const$/;"	f	class:Fixed	typeref:typename:float
+toInt	Mod02/ex01/srcs/Fixed.cpp	/^int	Fixed::toInt(void) const$/;"	f	class:Fixed	typeref:typename:int
+toInt	Mod02/ex02/srcs/Fixed.cpp	/^int	Fixed::toInt(void) const$/;"	f	class:Fixed	typeref:typename:int
+toInt	Mod02/ex03/srcs/Fixed.cpp	/^int	Fixed::toInt(void) const$/;"	f	class:Fixed	typeref:typename:int
 truncPrint	Mod00/ex01/srcs/Contact.cpp	/^void	Contact::truncPrint(std::string s) const$/;"	f	class:Contact	typeref:typename:void
+warning	Mod01/ex05/srcs/Harl.cpp	/^void	Harl::warning(void)$/;"	f	class:Harl	typeref:typename:void
+warning	Mod01/ex06/srcs/Harl.cpp	/^void	Harl::warning(void)$/;"	f	class:Harl	typeref:typename:void
+zombieHorde	Mod01/ex01/srcs/zombieHorde.cpp	/^Zombie*	zombieHorde( int N, std::string name)$/;"	f	typeref:typename:Zombie *
 ~Account	Mod00/ex02/srcs/Account.cpp	/^Account::~Account(void)$/;"	f	class:Account
+~ClapTrap	Mod03/ex00/srcs/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void)$/;"	f	class:ClapTrap
+~ClapTrap	Mod03/ex01/srcs/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void)$/;"	f	class:ClapTrap
 ~Contact	Mod00/ex01/srcs/Contact.cpp	/^Contact::~Contact(void)$/;"	f	class:Contact
+~Fixed	Mod02/ex00/srcs/Fixed.cpp	/^Fixed::~Fixed(void)$/;"	f	class:Fixed
+~Fixed	Mod02/ex01/srcs/Fixed.cpp	/^Fixed::~Fixed(void)$/;"	f	class:Fixed
+~Fixed	Mod02/ex02/srcs/Fixed.cpp	/^Fixed::~Fixed(void)$/;"	f	class:Fixed
+~Fixed	Mod02/ex03/srcs/Fixed.cpp	/^Fixed::~Fixed(void)$/;"	f	class:Fixed
+~Harl	Mod01/ex05/srcs/Harl.cpp	/^Harl::~Harl(void)$/;"	f	class:Harl
+~Harl	Mod01/ex06/srcs/Harl.cpp	/^Harl::~Harl(void)$/;"	f	class:Harl
+~HumanA	Mod01/ex03/srcs/HumanA.cpp	/^HumanA::~HumanA(void)$/;"	f	class:HumanA
+~HumanB	Mod01/ex03/srcs/HumanB.cpp	/^HumanB::~HumanB(void)$/;"	f	class:HumanB
 ~PhoneBook	Mod00/ex01/srcs/PhoneBook.cpp	/^PhoneBook::~PhoneBook ( void ) {$/;"	f	class:PhoneBook
+~Point	Mod02/ex03/srcs/Point.cpp	/^Point::~Point(void)$/;"	f	class:Point
+~ScavTrap	Mod03/ex01/srcs/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void)$/;"	f	class:ScavTrap
+~Weapon	Mod01/ex03/srcs/Weapon.cpp	/^Weapon::~Weapon(void)$/;"	f	class:Weapon
+~Zombie	Mod01/ex00/srcs/Zombie.cpp	/^Zombie::~Zombie( void )$/;"	f	class:Zombie
+~Zombie	Mod01/ex01/srcs/Zombie.cpp	/^Zombie::~Zombie( void )$/;"	f	class:Zombie

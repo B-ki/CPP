@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 14:05:20 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/15 19:24:44 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,9 @@ int main(void)
 		std::cout << "Point outside is really inside abc" << std::endl;
 	else
 		std::cout << "Point outside is absolutely not inside abc" << std::endl;
+	if (bsp(a, b, c, a))
+		std::cout << "Point a is really inside abc" << std::endl;
+	else
+		std::cout << "Point a is absolutely not inside abc" << std::endl;
 	return 0;
 }
