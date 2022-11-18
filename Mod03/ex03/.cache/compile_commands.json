@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/bek/42/CPP/Mod03/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/main.cpp -o bin/main.o",
+    "file": "srcs/main.cpp"
+  },
+  {
+    "directory": "/home/bek/42/CPP/Mod03/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/ClapTrap.cpp -o bin/ClapTrap.o",
+    "file": "srcs/ClapTrap.cpp"
+  },
+  {
+    "directory": "/home/bek/42/CPP/Mod03/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/ScavTrap.cpp -o bin/ScavTrap.o",
+    "file": "srcs/ScavTrap.cpp"
+  },
+  {
+    "directory": "/home/bek/42/CPP/Mod03/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/FragTrap.cpp -o bin/FragTrap.o",
+    "file": "srcs/FragTrap.cpp"
+  },
+  {
+    "directory": "/home/bek/42/CPP/Mod03/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/DiamondTrap.cpp -o bin/DiamondTrap.o",
+    "file": "srcs/DiamondTrap.cpp"
+  }
+]

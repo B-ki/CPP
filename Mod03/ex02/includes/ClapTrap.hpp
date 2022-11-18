@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:46:31 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/17 11:28:53 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/18 00:54:39 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ class ClapTrap
 {
 	protected:
 
-		std::string _name;
-		int	_HP;
-		int	_MP;
-		int	_AD;
+		std::string name;
+		int	HP;
+		int	MP;
+		int	AD;
 	
 	public:
 		ClapTrap(void);

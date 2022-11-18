@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/17 11:40:26 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/18 00:57:25 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,93 +16,95 @@
 
 int	main(void)
 {
-	ClapTrap Bob("Bob");
-	std::string Larry = "Larry";
+	ClapTrap Rems("Rems");
+	std::string Gus = "Gus";
 
-	Bob.setAD(2);
-	Bob.takeDmg(3);
-	Bob.attack(Larry);
-	Bob.beRepaired(4);
-	Bob.takeDmg(3);
-	Bob.takeDmg(3);
-	Bob.takeDmg(3);
-	Bob.attack(Larry);
-	Bob.beRepaired(5);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.takeDmg(3);
-	Bob.beRepaired(5);
-	Bob.takeDmg(90);
-	Bob.attack(Larry);
+	Rems.setAD(2);
+	Rems.takeDmg(3);
+	Rems.attack(Gus);
+	Rems.beRepaired(4);
+	Rems.takeDmg(3);
+	Rems.takeDmg(3);
+	Rems.takeDmg(3);
+	Rems.attack(Gus);
+	Rems.beRepaired(5);
+	Rems.attack(Gus);
+	Rems.attack(Gus);
+	Rems.attack(Gus);
+	Rems.attack(Gus);
+	Rems.attack(Gus);
+	Rems.attack(Gus);
+	Rems.attack(Gus);
+	Rems.takeDmg(3);
+	Rems.beRepaired(5);
+	Rems.takeDmg(90);
+	Rems.attack(Gus);
 
 	std::cout << std::endl;
 
-	ScavTrap Jack("Jack");
-	std::string Jones = "Jones";
+	ScavTrap FtSplitMan("FtSplitMan");
+	std::string Bene = "Bene";
 
-	Jack.takeDmg(3);
-	Jack.attack(Jones);
-	Jack.beRepaired(4);
-	Jack.takeDmg(3);
-	Jack.takeDmg(3);
-	Jack.takeDmg(3);
-	Jack.attack(Jones);
-	Jack.beRepaired(5);
-	Jack.attack(Jones);
-	Jack.attack(Jones);
-	Jack.attack(Jones);
-	Jack.attack(Jones);
-	Jack.attack(Jones);
-	Jack.attack(Jones);
-	Jack.attack(Jones);
-	Jack.guardGate();
-	Jack.takeDmg(3);
-	Jack.beRepaired(5);
-	Jack.takeDmg(90);
-	Jack.attack(Jones);
-	Jack.beRepaired(5);
-	Jack.takeDmg(90);
+	FtSplitMan.takeDmg(3);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.beRepaired(4);
+	FtSplitMan.takeDmg(3);
+	FtSplitMan.takeDmg(3);
+	FtSplitMan.takeDmg(3);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.beRepaired(5);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.guardGate();
+	FtSplitMan.takeDmg(3);
+	FtSplitMan.beRepaired(5);
+	FtSplitMan.takeDmg(90);
+	FtSplitMan.attack(Bene);
+	FtSplitMan.beRepaired(5);
+	FtSplitMan.takeDmg(90);
 
 	std::cout << std::endl;
 
 	ScavTrap Remi("Remisterio");	
 
 	std::cout << Remi;
-	Remi = Jack;
+	Remi = FtSplitMan;
 	std::cout << Remi;
 
 	std::cout << std::endl;
 
 	FragTrap Leo("Leo");
-	std::string Gus = "Gus";
+	std::string Nico = "Nico";
+	std::cout << Leo;
 
 	Leo.takeDmg(3);
-	Leo.attack(Gus);
+	Leo.attack(Nico);
 	Leo.beRepaired(4);
 	Leo.takeDmg(3);
 	Leo.takeDmg(3);
 	Leo.takeDmg(3);
-	Leo.attack(Gus);
+	Leo.attack(Nico);
 	Leo.beRepaired(5);
-	Leo.attack(Gus);
-	Leo.attack(Gus);
-	Leo.attack(Gus);
-	Leo.attack(Gus);
-	Leo.attack(Gus);
-	Leo.attack(Gus);
-	Leo.attack(Gus);
+	Leo.attack(Nico);
+	Leo.attack(Nico);
+	Leo.attack(Nico);
+	Leo.attack(Nico);
+	Leo.attack(Nico);
+	Leo.attack(Nico);
+	Leo.attack(Nico);
 	Leo.highFiveGuys();
 	Leo.takeDmg(3);
 	Leo.beRepaired(5);
 	Leo.takeDmg(90);
-	Leo.attack(Gus);
+	Leo.attack(Nico);
 	Leo.beRepaired(5);
 	Leo.takeDmg(90);
+	std::cout << Leo;
 
 	return 0;
 }

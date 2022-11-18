@@ -6,36 +6,36 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 21:14:34 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/18 00:58:56 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(void) : _name("Random Name"),_HP(10),_MP(10),_AD(0)
+ClapTrap::ClapTrap(void) : name("Random Name"),HP(10),MP(10),AD(0)
 {
-	std::cout << "ClapTrap default constructor." << std::endl;
+	std::cout <<CLAP<<"ClapTrap"<<NORMAL<< " default constructor." << std::endl;
 
 	return;
 }
 
-ClapTrap::ClapTrap(std::string n) : _name(n),_HP(10),_MP(10),_AD(0)
+ClapTrap::ClapTrap(std::string n) : name(n),HP(10),MP(10),AD(0)
 {
-	std::cout << "ClapTrap parametric constructor." << std::endl;
+	std::cout <<CLAP<<"ClapTrap"<<NORMAL<< " parametric constructor." << std::endl;
 
 	return;
 }
 
 ClapTrap::~ClapTrap(void)
 {
-	std::cout << "ClapTrap destructor." << std::endl;
+	std::cout <<CLAP<<"ClapTrap"<<NORMAL<< " destructor." << std::endl;
 
 	return;
 }
 
 ClapTrap::ClapTrap(ClapTrap const & src)
 {
-	std::cout << "ClapTrap copy constructor." << std::endl;
+	std::cout <<CLAP<<"ClapTrap"<<NORMAL<< " copy constructor." << std::endl;
 	*this = src;
 
 	return;
@@ -43,41 +43,41 @@ ClapTrap::ClapTrap(ClapTrap const & src)
 
 std::string	ClapTrap::getName(void) const
 {
-	return _name;
+	return name;
 }
 
 int	ClapTrap::getHP(void) const
 {
-	return _HP;
+	return HP;
 }
 
 int	ClapTrap::getMP(void) const
 {
-	return _MP;
+	return MP;
 }
 
 int	ClapTrap::getAD(void) const
 {
-	return _AD;
+	return AD;
 }
 
 void ClapTrap::setAD(unsigned int dmg)
 {
-	std::cout <<CLAP<<_name<<NORMAL<< "'s dmg is set to " << dmg << "." << std::endl;
-	_AD = dmg;
+	std::cout <<CLAP<<name<<NORMAL<< "'s dmg is set to " << dmg << "." << std::endl;
+	AD = dmg;
 	return ;
 }
 
 ClapTrap & ClapTrap::operator=(ClapTrap const & rhs)
 {
-	std::cout << "ClapTrap copy assignement operator called"<< std::endl;
+	std::cout <<CLAP<<"ClapTrap"<<NORMAL<< " copy assignement operator called"<< std::endl;
 
 	if (this != &rhs)
 	{
-		this->_name = rhs.getName();
-		this->_HP = rhs.getHP();
-		this->_MP = rhs.getMP();
-		this->_AD = rhs.getAD();
+		this->name = rhs.getName();
+		this->HP = rhs.getHP();
+		this->MP = rhs.getMP();
+		this->AD = rhs.getAD();
 	}
 
 	return *this;
@@ -85,55 +85,55 @@ ClapTrap & ClapTrap::operator=(ClapTrap const & rhs)
 
 void ClapTrap::attack(std::string &target)
 {
-	if (_HP <= 0)
+	if (HP <= 0)
 		return;
-	if (_MP <= 0)
+	if (MP <= 0)
 	{
-		std::cout << "Oh, no ! " <<CLAP<<_name<<NORMAL<< " has no more MP to attack !" << std::endl;
+		std::cout << "Oh, no ! " <<CLAP<<name<<NORMAL<< " has no more MP to attack !" << std::endl;
 		return ;
 	}
-	std::cout <<CLAP<<_name<<YELLOW<<" attacks "<<NORMAL<< target << ", causing " << _AD << " points of dmg !" << std::endl;
-	_MP--;
+	std::cout <<CLAP<<name<<YELLOW<<" attacks "<<NORMAL<< target << ", causing " << AD << " points of dmg !" << std::endl;
+	MP--;
 }
 
 void ClapTrap::takeDmg(unsigned int amount)
 {
-	if (_HP <= 0)
+	if (HP <= 0)
 		return;
-	std::cout <<CLAP<<_name<<RED<< " take " << amount << " dmg."<<NORMAL<< std::endl;
-	_HP -= amount;
-	if (_HP < 3 && _HP > 0)
+	std::cout <<CLAP<<name<<RED<< " take " << amount << " dmg."<<NORMAL<< std::endl;
+	HP -= amount;
+	if (HP < 3 && HP > 0)
 		std::cout << "Pfioouu that was close !" << std::endl;
-	else if (_HP <= 0)
-		std::cout <<CLAP<<_name<<NORMAL<< " is dead... Well, that was a fun game." << std::endl;
+	else if (HP <= 0)
+		std::cout <<CLAP<<name<<NORMAL<< " is dead... Well, that was a fun game." << std::endl;
 	return;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-	if (_HP <= 0)
+	if (HP <= 0)
 		return;
-	if (_MP <= 0)
+	if (MP <= 0)
 	{
-		std::cout << "Fuck it, " <<CLAP<<_name<<NORMAL<< " has no more MP to repair itself !" << std::endl;
+		std::cout << "Fuck it, " <<CLAP<<name<<NORMAL<< " has no more MP to repair itself !" << std::endl;
 		return ;
 	}
-	std::cout <<CLAP<<_name<<GREEN<<" is repaired of "<<NORMAL<< amount << " HP." << std::endl;
-	if (_HP < 3)
+	std::cout <<CLAP<<name<<GREEN<<" is repaired of "<<NORMAL<< amount << " HP." << std::endl;
+	if (HP < 3)
 		std::cout << "Wow it feels so much better now !" << std::endl;
-	_MP--;
-	_HP += amount;
-	if (_HP >= 10)
+	MP--;
+	HP += amount;
+	if (HP >= 10)
 	{
-		std::cout <<CLAP<<_name<<NORMAL<< " is fully restored !" << std::endl;
-		_HP = 10;
+		std::cout <<CLAP<<name<<NORMAL<< " is fully restored !" << std::endl;
+		HP = 10;
 	}
 	return;
 }
 
 std::ostream& operator<<(std::ostream & o, ClapTrap const & i)
 {
-	o << i.getName() << " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
+	o <<CLAP<< i.getName() <<NORMAL<< " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
 
 	return o;
 }

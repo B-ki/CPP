@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:46:31 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 21:17:03 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/18 01:03:08 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,18 @@
 
 class ClapTrap
 {
-	private:
-		std::string _name;
-		int	_HP;
-		int	_MP;
-		int	_AD;
-	
+	protected:
+		std::string name;
+		int	HP;
+		int	MP;
+		int	AD;
+
 	public:
 		ClapTrap(void);
 		ClapTrap(ClapTrap const & src);
 		ClapTrap(std::string n);
 		~ClapTrap(void);
-	
+
 		std::string getName(void) const;
 		int getHP(void) const;
 		int getMP(void) const;
