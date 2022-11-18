@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 20:19:54 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/18 01:03:35 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,29 @@
 
 int	main(void)
 {
-	ClapTrap Bob("Bob");
-	std::string Larry = "Larry";
+	ClapTrap Remi("Remi");
+	std::string Gus = "Gus";
 
-	Bob.setAD(2);
-	Bob.takeDmg(3);
-	Bob.attack(Larry);
-	Bob.beRepaired(4);
-	Bob.takeDmg(3);
-	Bob.takeDmg(3);
-	Bob.takeDmg(3);
-	Bob.attack(Larry);
-	Bob.beRepaired(5);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.attack(Larry);
-	Bob.takeDmg(3);
-	Bob.beRepaired(5);
-	Bob.takeDmg(90);
-	Bob.attack(Larry);
+	Remi.setAD(2);
+	Remi.takeDmg(3);
+	Remi.attack(Gus);
+	Remi.beRepaired(4);
+	Remi.takeDmg(3);
+	Remi.takeDmg(3);
+	Remi.takeDmg(3);
+	Remi.attack(Gus);
+	Remi.beRepaired(5);
+	Remi.attack(Gus);
+	Remi.attack(Gus);
+	Remi.attack(Gus);
+	Remi.attack(Gus);
+	Remi.attack(Gus);
+	Remi.attack(Gus);
+	Remi.attack(Gus);
+	Remi.takeDmg(3);
+	Remi.beRepaired(5);
+	Remi.takeDmg(90);
+	Remi.attack(Gus);
 
 	return 0;
 }
