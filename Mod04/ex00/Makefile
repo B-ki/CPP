@@ -1,5 +1,5 @@
-NAME = ClapTrap
-SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
+NAME = Animal
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = bin/

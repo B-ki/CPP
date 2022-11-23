@@ -1,0 +1,22 @@
+[
+  {
+    "directory": "/home/bek/42/CPP/Mod04/ex00",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/main.cpp -o bin/main.o",
+    "file": "srcs/main.cpp"
+  },
+  {
+    "directory": "/home/bek/42/CPP/Mod04/ex00",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Animal.cpp -o bin/Animal.o",
+    "file": "srcs/Animal.cpp"
+  },
+  {
+    "directory": "/home/bek/42/CPP/Mod04/ex00",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Cat.cpp -o bin/Cat.o",
+    "file": "srcs/Cat.cpp"
+  },
+  {
+    "directory": "/home/bek/42/CPP/Mod04/ex00",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Dog.cpp -o bin/Dog.o",
+    "file": "srcs/Dog.cpp"
+  }
+]
