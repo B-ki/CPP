@@ -1,32 +1,27 @@
 [
   {
-    "directory": "/home/bek/42/CPP/Mod04/ex01",
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod04/ex01",
     "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/main.cpp -o bin/main.o",
     "file": "srcs/main.cpp"
   },
   {
-    "directory": "/home/bek/42/CPP/Mod04/ex01",
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod04/ex01",
     "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Animal.cpp -o bin/Animal.o",
     "file": "srcs/Animal.cpp"
   },
   {
-    "directory": "/home/bek/42/CPP/Mod04/ex01",
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod04/ex01",
     "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Cat.cpp -o bin/Cat.o",
     "file": "srcs/Cat.cpp"
   },
   {
-    "directory": "/home/bek/42/CPP/Mod04/ex01",
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod04/ex01",
     "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Dog.cpp -o bin/Dog.o",
     "file": "srcs/Dog.cpp"
   },
   {
-    "directory": "/home/bek/42/CPP/Mod04/ex01",
-    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/WrongAnimal.cpp -o bin/WrongAnimal.o",
-    "file": "srcs/WrongAnimal.cpp"
-  },
-  {
-    "directory": "/home/bek/42/CPP/Mod04/ex01",
-    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/WrongCat.cpp -o bin/WrongCat.o",
-    "file": "srcs/WrongCat.cpp"
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod04/ex01",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Brain.cpp -o bin/Brain.o",
+    "file": "srcs/Brain.cpp"
   }
 ]

@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/18 10:55:09 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 14:56:40 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ Dog::Dog(void) : Animal()
 {
 	std::cout << "Dog default constructor." << std::endl;
 	type = "Dog";
+	_brain = new Brain();
 
 	return;
 }
@@ -23,6 +24,7 @@ Dog::Dog(void) : Animal()
 Dog::~Dog(void)
 {
 	std::cout << "Dog destructor." << std::endl;
+	delete _brain;
 
 	return;
 }
@@ -30,6 +32,7 @@ Dog::~Dog(void)
 Dog::Dog(Dog const & src) : Animal(src)
 {
 	std::cout << "Dog copy constructor." << std::endl;
+	_brain = src._brain;
 	*this = src;
 
 	return;
@@ -40,7 +43,10 @@ Dog & Dog::operator=(Dog const & rhs)
 	std::cout << "Dog copy assignement operator called"<< std::endl;
 
 	if (this != &rhs)
+	{
 		type = rhs.getType();
+		*_brain = *rhs._brain;
+	}
 
 	return *this;
 }
@@ -55,4 +61,9 @@ std::ostream& operator<<(std::ostream & o, Dog const & i)
 void Dog::makeSound(void) const
 {
 	std::cout << "Woof woof" << std::endl;
+}
+
+Brain* Dog::getBrain(void)
+{
+	return _brain;
 }
