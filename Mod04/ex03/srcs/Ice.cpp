@@ -6,13 +6,13 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 20:13:15 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/25 12:17:31 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
 
-Ice::Ice(void) : type("ice") {}
+Ice::Ice(void) {type = "ice";}
 
 Ice::~Ice(void) {}
 

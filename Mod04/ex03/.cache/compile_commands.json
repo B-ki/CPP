@@ -18,5 +18,15 @@
     "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod04/ex03",
     "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Cure.cpp -o bin/Cure.o",
     "file": "srcs/Cure.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod04/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Character.cpp -o bin/Character.o",
+    "file": "srcs/Character.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod04/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/MateriaSource.cpp -o bin/MateriaSource.o",
+    "file": "srcs/MateriaSource.cpp"
   }
 ]

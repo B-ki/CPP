@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 17:18:38 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 20:22:50 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/25 12:03:55 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ class MateriaSource : public IMateriaSource
 
 		unsigned int const & getSize() const;
 
-		void learnMateria(AMateria*);
+		void learnMateria(AMateria* m);
 		AMateria* createMateria(std::string const & type);
 
 	protected:
 
 	private:
-		AMateria* slot[4];  
+		AMateria* _slot[4];  
 		unsigned int _size;
 
 };

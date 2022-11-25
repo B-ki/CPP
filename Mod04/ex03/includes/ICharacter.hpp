@@ -6,15 +6,18 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 17:21:51 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 20:12:01 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/25 09:23:06 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ICHARACTER_HPP
 #define ICHARACTER_HPP 
 
-#include <string>
-#include <iostream>
+# include <string>
+# include <iostream>
+# include "AMateria.hpp"
+
+class AMateria;
 
 class ICharacter
 {

@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 17:24:20 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 20:22:50 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/25 12:33:35 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Character : public ICharacter
 		Character & operator=(Character const & rhs);
 
 		std::string const & getName() const;
-		unsigned int const & getSize() const;
+		int const & getSize() const;
 		void equip(AMateria* m);
 		void unequip(int idx);
 		void use(int idx, ICharacter& target);
@@ -36,9 +36,8 @@ class Character : public ICharacter
 
 	private:
 		std::string _name;
-		AMateria* slot[4];
-		unsigned int _size;
-		//TO DO : Creer une liste chainee de Materia tombees pour pouvoir les supprimer dans le destructeur
+		AMateria* _slot[4];
+		int _size;
 
 };
 

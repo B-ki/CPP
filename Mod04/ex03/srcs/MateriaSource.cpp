@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 20:22:50 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/25 12:56:50 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,14 @@
 
 MateriaSource::MateriaSource(void) : _size(0) {}
 
-MateriaSource::~MateriaSource(void) {}
+MateriaSource::~MateriaSource(void)
+{
+	for (unsigned int i = 0; i < _size; i++)
+	{
+		if (_slot[i])
+			delete _slot[i];
+	}
+}
 
 MateriaSource::MateriaSource(MateriaSource const & src) {*this = src;}
 
@@ -26,7 +33,7 @@ MateriaSource & MateriaSource::operator=(MateriaSource const & rhs)
 	{
 		_size = rhs.getSize();
 		for(unsigned int i = 0; i < _size; i++)
-			slot[i] = rhs.slot[i]->clone();
+			_slot[i] = rhs._slot[i]->clone();
 	}
 
 	return *this;
@@ -39,12 +46,20 @@ std::ostream& operator<<(std::ostream & o, MateriaSource const & i)
 	return o;
 }
 
-void MateriaSource::learnMateria(AMateria*)
+void MateriaSource::learnMateria(AMateria* m)
 {
-	//TO DO	: Add a new materia, a copy of the pointed AMateria, to the last slot or do nothing if full
+	if (_size == 3)
+		return;
+	_slot[_size] = m;
+	_size++;
 }
 
-void MateriaSource::AMateria* createMateria(std::string const & type)
+AMateria* MateriaSource::createMateria(std::string const & type)
 {
-	//TO DO	: Create a materia with the type type
+	for (unsigned int i = 0; i < _size; i++)
+	{
+		if (!type.compare(_slot[i]->getType()))
+			return (_slot[i]->clone());
+	}
+	return 0;
 }
