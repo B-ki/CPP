@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 14:56:40 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/02 15:47:52 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ Dog::~Dog(void)
 Dog::Dog(Dog const & src) : Animal(src)
 {
 	std::cout << "Dog copy constructor." << std::endl;
-	_brain = src._brain;
+	_brain = new Brain();
 	*this = src;
 
 	return;

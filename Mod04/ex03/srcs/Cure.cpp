@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 20:02:56 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/01 15:49:28 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void Cure::use(ICharacter& target)
 
 AMateria* Cure::clone(void) const
 {
-	AMateria* newIce = new Cure();
+	AMateria* newCure = new Cure();
 
-	return newIce;
+	return newCure;
 }

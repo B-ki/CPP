@@ -6,15 +6,29 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/25 12:47:20 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/02 15:52:43 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
 
-Character::Character(void) : _name("Default"),_size(0) {}
+Character::Character(void)
+{
+	_name = "Default";
+	_size = 0;
+	_head = new linkedList;
+	for (int i = 0; i < 4; i++)
+		_slot[i] = NULL;
+}
 
-Character::Character(std::string n) : _name(n),_size(0) {}
+Character::Character(std::string n)
+{
+	_name = n;
+	_size = 0;
+	_head = new linkedList;
+	for (int i = 0; i < 4; i++)
+		_slot[i] = NULL;
+}
 
 Character::~Character(void)
 {
@@ -23,6 +37,8 @@ Character::~Character(void)
 		if (_slot[i])
 			delete _slot[i];
 	}
+	if (_head)
+		delete _head;
 }
 
 Character::Character(Character const & src) {*this = src;}
@@ -38,7 +54,12 @@ Character & Character::operator=(Character const & rhs)
 		_name = rhs.getName();
 		_size = rhs.getSize();
 		for(int i = 0; i < _size; i++)
-			_slot[i] = rhs._slot[i]->clone();
+		{
+			if (rhs._slot[i])
+				_slot[i] = rhs._slot[i]->clone();
+			else
+				_slot[i] = NULL;
+		}
 	}
 
 	return *this;
@@ -53,26 +74,35 @@ std::ostream& operator<<(std::ostream & o, Character const & i)
 
 void Character::equip(AMateria* m)
 {
-	if (_size > 3)
+	if (_size > 3 || !m)
+	{
+		if (_size > 3)
+			_head->addNode(m);
 		return;
-	_slot[_size] = m;
-	_size++;
+	}
+	for(int i = 0; i < 4; i++)
+	{
+		if (_slot[i] == NULL)
+		{
+			_slot[i] = m;
+			_size++;
+			break;
+		}
+	}
 }
 
 void Character::unequip(int idx)
 {
-	if (idx < _size)
-		return;
-	int i = idx - 1;
-	for (; i < _size; i++)
+	if (idx >= 0 && idx < _size)
 	{
-		_slot[i] = _slot[i+1];
+		_head->addNode(_slot[idx]);
+		_slot[idx] = NULL;
 	}
-	_slot[i] = NULL;
 	_size--;
 }
 
 void Character::use(int idx, ICharacter& target)
 {
-	_slot[idx]->use(target);
+	if (_size && (idx >= 0 && idx <_size))
+		_slot[idx]->use(target);
 }

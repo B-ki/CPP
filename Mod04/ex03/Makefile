@@ -1,10 +1,10 @@
 NAME = Materia
-SRC = main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
+SRC = main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp linkedList.cpp
 SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = bin/
 CC = c++ -I$(INCDIR)
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -Wshadow
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -Wshadow -g
 OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))
 RM = rm -f
 

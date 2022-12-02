@@ -1,40 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   linkedList.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/18 12:15:54 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/02 15:46:34 by rmorel           ###   ########.fr       */
+/*   Created: 2022/12/01 10:35:36 by rmorel            #+#    #+#             */
+/*   Updated: 2022/12/01 10:40:21 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BRAIN_HPP
-#define BRAIN_HPP 
+#ifndef LINKEDLIST_HPP
+#define LINKEDLIST_HPP 
 
 #include <string>
 #include <iostream>
+#include "AMateria.hpp"
 
-class Brain
+struct node
+{
+	AMateria* m;
+    struct node *next;
+};
+
+class linkedList
 {
 	public:
-		Brain(void);
-		Brain(Brain const & src);
-		~Brain(void);
+		linkedList(void);
+		linkedList(linkedList const & src);
+		~linkedList(void);
 
-		Brain & operator=(Brain const & rhs);
+		linkedList & operator=(linkedList const & rhs);
+		void addNode(AMateria* m);
 
-		std::string getIdea(int i) const;
-		void setIdea(std::string s, int i);
-		
 	protected:
 
 	private:
-		std::string _ideas[100];
+		node  *_head, *_tail;
 
 };
-
-std::ostream & operator<<(std::ostream & o, Brain const & i);
 
 #endif 

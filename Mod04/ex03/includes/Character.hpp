@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 17:24:20 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/25 12:33:35 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/01 11:39:08 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <string>
 #include <iostream>
 #include "ICharacter.hpp"
+#include "linkedList.hpp"
 
 class Character : public ICharacter
 {
@@ -38,6 +39,7 @@ class Character : public ICharacter
 		std::string _name;
 		AMateria* _slot[4];
 		int _size;
+		linkedList* _head;
 
 };
 

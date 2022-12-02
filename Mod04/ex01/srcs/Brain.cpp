@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:17 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/02 15:47:10 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,14 @@ Brain::Brain(Brain const & src)
 std::string Brain::getIdea(int i) const
 {
 	if (i >= 0 && i <= 100)
-		return ideas[i];
+		return _ideas[i];
 	return NULL;
 }
 
 void Brain::setIdea(std::string s, int i)
 {
 	if (i >= 0 && i <= 100)
-		ideas[i] = s;
+		_ideas[i] = s;
 }
 
 Brain & Brain::operator=(Brain const & rhs)
@@ -54,7 +54,7 @@ Brain & Brain::operator=(Brain const & rhs)
 	if (this != &rhs)
 	{
 		for (int i = 0; i < 100; i++)
-			ideas[i] = rhs.getIdea(i);
+			_ideas[i] = rhs.getIdea(i);
 	}
 	return *this;
 }

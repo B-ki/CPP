@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 16:21:52 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/02 15:48:40 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ AAnimal & AAnimal::operator=(AAnimal const & rhs)
 
 std::ostream& operator<<(std::ostream & o, AAnimal const & i)
 {
-	o << "The value of _XX is : " << i.getType();
+	o << "The type is : " << i.getType();
 
 	return o;
 }
