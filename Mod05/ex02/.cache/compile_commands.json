@@ -1,0 +1,17 @@
+[
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex02",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/main.cpp -o bin/main.o",
+    "file": "srcs/main.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex02",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/Bureaucrat.cpp -o bin/Bureaucrat.o",
+    "file": "srcs/Bureaucrat.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex02",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/Form.cpp -o bin/Form.o",
+    "file": "srcs/Form.cpp"
+  }
+]
