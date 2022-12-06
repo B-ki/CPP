@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/05 09:28:45 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/01 16:54:22 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,36 +88,5 @@ void	Bureaucrat::decrementGrade(void)
 	catch (std::exception& e)
 	{
 		std::cout << "You can't decrement the minimum grade." << std::endl;
-	}
-}
-
-void Bureaucrat::signForm(AForm& form) const
-{ 
-	try {
-		form.beSigned(*this);
-		std::cout << _name << " signed the form " << form.getName() << std::endl;
-	}
-	catch (AForm::GradeTooLowException &e) {
-		std::cout << _name << " couldn't sign the form " << form.getName() << " because grade was too low" << std::endl;
-	}
-	catch (AForm::GradeTooHighException &e) {
-		std::cout << _name << " couldn't sign the form " << form.getName() << " because grade was too high" << std::endl;
-	}
-}
-
-void Bureaucrat::executeForm(AForm const & form)
-{
-	try {
-		form.execute(*this);
-		std::cout << _name << " executed " << form.getName() << std::endl;
-	}
-	catch (AForm::NotSignedException &d) {
-		std::cout << _name << " couldn't execute the form " << form.getName() << " because it was not signed before" << std::endl;
-	}
-	catch (AForm::GradeTooLowException &e) {
-		std::cout << _name << " couldn't execute the form " << form.getName() << " because grade was too low" << std::endl;
-	}
-	catch (AForm::GradeTooHighException &e) {
-		std::cout << _name << " couldn't execute the form " << form.getName() << " because grade was too high" << std::endl;
 	}
 }

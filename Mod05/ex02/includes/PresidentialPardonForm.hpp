@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ShrubberyCreationForm.hpp                          :+:      :+:    :+:   */
+/*   PresidentialPardonForm.cpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 11:45:14 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/05 09:13:05 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/05 09:15:34 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SHRUBBERYCREATIONFORM_HPP
-#define SHRUBBERYCREATIONFORM_HPP 
+#ifndef PRESIDENTIALPARDONFORM_HPP
+#define PRESIDENTIALPARDONFORM_HPP 
 
 #include <string>
 #include <iostream>
-#include <fstream>
-#include <sstream>
 
 #include "Form.hpp"
 
-class ShrubberyCreationForm : public AForm
+class PresidentialPardonForm : public AForm
 {
 	public:
-		ShrubberyCreationForm(void);
-		ShrubberyCreationForm(std::string t);
-		ShrubberyCreationForm(ShrubberyCreationForm const & src);
-		~ShrubberyCreationForm(void);
+		PresidentialPardonForm(void);
+		PresidentialPardonForm(std::string t);
+		PresidentialPardonForm(PresidentialPardonForm const & src);
+		~PresidentialPardonForm(void);
 
 		virtual const std::string & getName(void) const;
 		virtual unsigned int getSignGrade(void) const;
@@ -34,7 +32,7 @@ class ShrubberyCreationForm : public AForm
 		virtual bool getSigned(void) const;
 		std::string getTarget(void) const;
 
-		ShrubberyCreationForm & operator=(ShrubberyCreationForm const & rhs);
+		PresidentialPardonForm & operator=(PresidentialPardonForm const & rhs);
 
 		virtual void execute(Bureaucrat const & executor) const;
 
@@ -45,6 +43,6 @@ class ShrubberyCreationForm : public AForm
 
 };
 
-std::ostream & operator<<(std::ostream & o, ShrubberyCreationForm const & i);
+std::ostream & operator<<(std::ostream & o, PresidentialPardonForm const & i);
 
 #endif 

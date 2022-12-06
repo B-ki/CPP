@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 16:58:23 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/01 17:42:18 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/02 10:15:08 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,13 @@ class Form
 {
 	public:
 		Form(void);
+		Form(std::string n, unsigned int g1, unsigned int g2);
 		Form(Form const & src);
 		~Form(void);
 
 		const std::string & getName(void) const;
-		int getSignGrade(void) const;
-		int getExecGrade(void) const;
+		unsigned int getSignGrade(void) const;
+		unsigned int getExecGrade(void) const;
 		bool getSigned(void) const;
 
 		Form & operator=(Form const & rhs);
@@ -52,8 +53,8 @@ class Form
 	private:
 		const std::string _name;
 		bool _signed;
-		int	_gradeSign;
-		int	_gradeExec;
+		unsigned int	_gradeSign;
+		unsigned int	_gradeExec;
 
 
 };

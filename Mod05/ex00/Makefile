@@ -1,10 +1,10 @@
 NAME = Bureaucrat
-SRC = main.cpp Bureaucrat.cpp Form.cpp
+SRC = main.cpp Bureaucrat.cpp
 SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = bin/
 CC = c++ -I$(INCDIR)
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -Wshadow
 OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))
 RM = rm -f
 

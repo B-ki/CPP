@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ShrubberyCreationForm.hpp                          :+:      :+:    :+:   */
+/*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 11:45:14 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/05 09:13:05 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/05 09:08:15 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SHRUBBERYCREATIONFORM_HPP
-#define SHRUBBERYCREATIONFORM_HPP 
+#ifndef ROBOTOMYREQUESTFORMFORM_HPP
+#define ROBOTOMYREQUESTFORMFORM_HPP 
 
 #include <string>
 #include <iostream>
-#include <fstream>
-#include <sstream>
+#include <cstdlib>
 
 #include "Form.hpp"
 
-class ShrubberyCreationForm : public AForm
+class RobotomyRequestForm : public AForm
 {
 	public:
-		ShrubberyCreationForm(void);
-		ShrubberyCreationForm(std::string t);
-		ShrubberyCreationForm(ShrubberyCreationForm const & src);
-		~ShrubberyCreationForm(void);
+		RobotomyRequestForm(void);
+		RobotomyRequestForm(std::string t);
+		RobotomyRequestForm(RobotomyRequestForm const & src);
+		~RobotomyRequestForm(void);
 
 		virtual const std::string & getName(void) const;
 		virtual unsigned int getSignGrade(void) const;
@@ -34,7 +33,7 @@ class ShrubberyCreationForm : public AForm
 		virtual bool getSigned(void) const;
 		std::string getTarget(void) const;
 
-		ShrubberyCreationForm & operator=(ShrubberyCreationForm const & rhs);
+		RobotomyRequestForm & operator=(RobotomyRequestForm const & rhs);
 
 		virtual void execute(Bureaucrat const & executor) const;
 
@@ -45,6 +44,6 @@ class ShrubberyCreationForm : public AForm
 
 };
 
-std::ostream & operator<<(std::ostream & o, ShrubberyCreationForm const & i);
+std::ostream & operator<<(std::ostream & o, RobotomyRequestForm const & i);
 
 #endif 

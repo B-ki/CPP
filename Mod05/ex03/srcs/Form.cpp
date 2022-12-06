@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/02 10:16:09 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/02 16:28:21 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,47 +14,48 @@
 
 //##########          CONSTRUCTORS & DESTRUCTORS          ##############
 
-Form::Form(void) : _name("Default"),_signed(false),_gradeSign(150),_gradeExec(150) {}
+AForm::AForm(void) : name("Default"),checkSigned(false),gradeSign(150),gradeExec(150) {}
 
-Form::Form(std::string n, unsigned int g1, unsigned int g2) : _name(n), _signed(false), _gradeSign(g1), _gradeExec(g2) {};
+AForm::AForm(std::string n, unsigned int g1, unsigned int g2) : name(n), checkSigned(false), gradeSign(g1), gradeExec(g2) {};
 
-Form::~Form(void) {}
+AForm::~AForm(void) {}
 
-Form::Form(Form const & src) : _name(src._name),_signed(src._signed),_gradeSign(src._gradeSign),_gradeExec(src._gradeExec) {}
+AForm::AForm(AForm const & src) : name(src.name),checkSigned(src.checkSigned),gradeSign(src.gradeSign),gradeExec(src.gradeExec) {}
 
 //##########          GETTER & SETTER          ##############
 
-const std::string & Form::getName(void) const {return _name;};
-bool Form::getSigned(void) const {return _signed;};
-unsigned int Form::getSignGrade(void) const {return _gradeSign;};
-unsigned int Form::getExecGrade(void) const {return _gradeExec;};
+const std::string & AForm::getName(void) const {return name;};
+bool AForm::getSigned(void) const {return checkSigned;};
+unsigned int AForm::getSignGrade(void) const {return gradeSign;};
+unsigned int AForm::getExecGrade(void) const {return gradeExec;};
 
 //##########          OPERATOR OVERLOADING          ##############
 
-Form & Form::operator=(Form const & rhs)
+AForm & AForm::operator=(AForm const & rhs)
 {
 	if (this != &rhs)
 	{
-		_signed = rhs.getSigned();
-		_gradeSign = rhs.getSignGrade();
-		_gradeExec = rhs.getExecGrade();
+		checkSigned = rhs.getSigned();
+		gradeSign = rhs.getSignGrade();
+		gradeExec = rhs.getExecGrade();
 	}
 
 	return *this;
 }
 
-std::ostream& operator<<(std::ostream & o, Form const & i)
+std::ostream& operator<<(std::ostream & o, AForm const & i)
 {
-	o <<  "Form " << i.getName() << ", signed : " << i.getSigned() << ", signGrade : " << i.getSignGrade() << ", execGrade " << i.getExecGrade();
+	o <<  "AForm " << i.getName() << ", signed : " << i.getSigned();
+	o << ", signGrade : " << i.getSignGrade() << ", execGrade " << i.getExecGrade();
 
 	return o;
 }
 
 //##########          MEMBERS FUNCTION          ##############
 
-void Form::beSigned(const Bureaucrat bur)
+void AForm::beSigned(const Bureaucrat bur)
 {
-	if (bur.getGrade() > _gradeSign)
+	if (bur.getGrade() > gradeSign)
 		throw GradeTooLowException(); 
-	_signed = true;
+	checkSigned = true;
 }

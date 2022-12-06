@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/05 09:30:32 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/06 11:16:06 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 
 int main(void)
 {
@@ -48,6 +49,15 @@ int main(void)
 	nthimoni.signForm(B5);
 	nthimoni.executeForm(B25);
 	nthimoni.executeForm(B5);
+
+	std::cout << std::endl;
+
+	Intern someRandomIntern;
+	AForm* rrf;
+	rrf = someRandomIntern.makeForm("robotomy request", "Bender");
+	nthimoni.signForm(*rrf);
+	nthimoni.executeForm(*rrf);
+		
 
 	return 0;
 }

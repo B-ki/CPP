@@ -1,0 +1,37 @@
+[
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/main.cpp -o bin/main.o",
+    "file": "srcs/main.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/Bureaucrat.cpp -o bin/Bureaucrat.o",
+    "file": "srcs/Bureaucrat.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/Form.cpp -o bin/Form.o",
+    "file": "srcs/Form.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/ShrubberyCreationForm.cpp -o bin/ShrubberyCreationForm.o",
+    "file": "srcs/ShrubberyCreationForm.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/RobotomyRequestForm.cpp -o bin/RobotomyRequestForm.o",
+    "file": "srcs/RobotomyRequestForm.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/PresidentialPardonForm.cpp -o bin/PresidentialPardonForm.o",
+    "file": "srcs/PresidentialPardonForm.cpp"
+  },
+  {
+    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex03",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -c srcs/Intern.cpp -o bin/Intern.o",
+    "file": "srcs/Intern.cpp"
+  }
+]

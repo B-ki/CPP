@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/01 17:42:58 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/02 17:35:23 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,16 @@ void	Bureaucrat::decrementGrade(void)
 	}
 }
 
-void signForm(Form form)
+void Bureaucrat::signForm(Form form) const
 {
-	// TO DO
+	try {
+		form.beSigned(*this);
+		std::cout << _name << " signed the form " << form.getName() << std::endl;
+	}
+	catch (Form::GradeTooLowException &e) {
+		std::cout << _name << " couldn't sign the form " << form.getName() << " because grade was too low" << std::endl;
+	}
+	catch (Form::GradeTooHighException &e) {
+		std::cout << _name << " couldn't sign the form " << form.getName() << " because grade was too high" << std::endl;
+	}
 }
