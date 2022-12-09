@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/18 00:48:51 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 11:55:18 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,12 +72,15 @@ std::string DiamondTrap::getName(void) const
 
 std::ostream& operator<<(std::ostream & o, DiamondTrap const & i)
 {
-	o <<DIAM<< i.getName() <<NORMAL<< " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
+	if (i.getHP() < 0)
+		o <<DIAM<< i.getName() <<NORMAL<< " is dead." << std::endl;
+	else
+		o <<DIAM<< i.getName() <<NORMAL<< " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
 
 	return o;
 }
 
 void	DiamondTrap::whoAmI(void) const
 {
-	std::cout <<CLAP<< "ClapTrap's name is "<< ClapTrap::name <<NORMAL<< " and " <<DIAM<< "DiamondTrap's name is " << _name <<NORMAL<< std::endl;
+	std::cout << "ClapTrap's name is "<<CLAP<< ClapTrap::name <<NORMAL<< " and DiamondTrap's name is " <<DIAM<< _name <<NORMAL<< std::endl;
 }

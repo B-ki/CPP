@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/18 00:30:11 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 11:53:54 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ int	main(void)
 	Nico.guardGate();
 	Nico.takeDmg(3);
 	Nico.beRepaired(5);
+	std::cout << Nico;
 	Nico.takeDmg(90);
 	Nico.attack(Bene);
 	Nico.beRepaired(5);
@@ -100,10 +101,12 @@ int	main(void)
 	Leo.highFiveGuys();
 	Leo.takeDmg(3);
 	Leo.beRepaired(5);
+	std::cout << Leo;
 	Leo.takeDmg(90);
 	Leo.attack(Gus);
 	Leo.beRepaired(5);
 	Leo.takeDmg(90);
+	Leo.attack(Gus);
 
 	std::cout << std::endl;
 	std::cout << std::endl;
@@ -133,7 +136,9 @@ int	main(void)
 	Arthur.takeDmg(90);
 	Arthur.attack(Tea);
 	Arthur.beRepaired(5);
+	std::cout << Arthur;
 	Arthur.takeDmg(90);
+	Arthur.attack(Tea);
 	std::cout << Arthur;
 	Arthur.whoAmI();
 	std::cout << std::endl;

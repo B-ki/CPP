@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/17 22:43:57 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 11:52:38 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,11 @@ int	ClapTrap::getAD(void) const
 
 void ClapTrap::setAD(unsigned int dmg)
 {
+	if (dmg > 200)
+	{
+		std::cout << "Dmg must be a positive number and maximum 200." << std::endl;
+		return;
+	}
 	std::cout <<CLAP<<name<<NORMAL<< "'s dmg is set to " << dmg << "." << std::endl;
 	AD = dmg;
 	return ;
@@ -98,6 +103,11 @@ void ClapTrap::attack(std::string &target)
 
 void ClapTrap::takeDmg(unsigned int amount)
 {
+	if (amount > 200)
+	{
+		std::cout << "Amount must be a positive number and maximum 200." << std::endl;
+		return;
+	}
 	if (HP <= 0)
 		return;
 	std::cout <<CLAP<<name<<RED<< " take " << amount << " dmg."<<NORMAL<< std::endl;
@@ -111,6 +121,11 @@ void ClapTrap::takeDmg(unsigned int amount)
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
+	if (amount > 200)
+	{
+		std::cout << "Amount must be a positive number and maximum 200." << std::endl;
+		return;
+	}
 	if (HP <= 0)
 		return;
 	if (MP <= 0)
@@ -123,17 +138,20 @@ void ClapTrap::beRepaired(unsigned int amount)
 		std::cout << "Wow it feels so much better now !" << std::endl;
 	MP--;
 	HP += amount;
-	if (HP >= 10)
+	if (HP >= 200)
 	{
 		std::cout <<CLAP<<name<<NORMAL<< " is fully restored !" << std::endl;
-		HP = 10;
+		HP = 200;
 	}
 	return;
 }
 
 std::ostream& operator<<(std::ostream & o, ClapTrap const & i)
 {
-	o << i.getName() << " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
+	if (i.getHP() < 0)
+		o <<CLAP<< i.getName() <<NORMAL<< " is dead." << std::endl;
+	else
+		o << i.getName() << " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
 
 	return o;
 }

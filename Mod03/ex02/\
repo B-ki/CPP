@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/24 11:52:26 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 11:34:39 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void ClapTrap::setAD(unsigned int dmg)
 {
 	if (dmg > 200)
 	{
-		std::cout << "Dmg must be a positive number and maximum 200." << std::endl;
+		std::cout << "Amount must be a positive number and maximum 200." << std::endl;
 		return;
 	}
 	std::cout <<CLAP<<name<<NORMAL<< "'s dmg is set to " << dmg << "." << std::endl;
@@ -138,10 +138,10 @@ void ClapTrap::beRepaired(unsigned int amount)
 		std::cout << "Wow it feels so much better now !" << std::endl;
 	MP--;
 	HP += amount;
-	if (HP >= 200)
+	if (HP >= 10)
 	{
 		std::cout <<CLAP<<name<<NORMAL<< " is fully restored !" << std::endl;
-		HP = 200;
+		HP = 10;
 	}
 	return;
 }
@@ -149,9 +149,9 @@ void ClapTrap::beRepaired(unsigned int amount)
 std::ostream& operator<<(std::ostream & o, ClapTrap const & i)
 {
 	if (i.getHP() < 0)
-		o <<CLAP<< i.getName() <<NORMAL<< " is dead." << std::endl;
+		o <<SCAV<< i.getName() <<NORMAL<< " is dead." << std::endl;
 	else
-		o <<CLAP<<i.getName()<<NORMAL<< " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
+		o << i.getName() << " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
 
 	return o;
 }

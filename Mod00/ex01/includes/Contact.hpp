@@ -6,13 +6,14 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:15:59 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 14:56:47 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/21 10:47:28 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONTACT_HPP
 # define CONTACT_HPP 
 
+#include <stdlib.h>
 #include <string>
 #include <iostream>
 #include <iomanip>

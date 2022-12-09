@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/18 01:02:01 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 12:01:15 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,13 @@ int	main(void)
 	std::cout << std::endl;
 
 	ScavTrap Leo("Leo");
+	std::cout << Leo;
 	std::string Nico = "Nico";
 
 	Leo.takeDmg(3);
 	Leo.attack(Nico);
 	Leo.beRepaired(4);
+	std::cout << Leo;
 	Leo.takeDmg(3);
 	Leo.takeDmg(3);
 	Leo.takeDmg(3);
@@ -59,13 +61,17 @@ int	main(void)
 	Leo.attack(Nico);
 	Leo.attack(Nico);
 	Leo.attack(Nico);
+	std::cout << Leo;
 	Leo.guardGate();
 	Leo.takeDmg(3);
 	Leo.beRepaired(5);
 	Leo.takeDmg(90);
+	std::cout << Leo;
 	Leo.attack(Nico);
 	Leo.beRepaired(5);
 	Leo.takeDmg(90);
+	Leo.beRepaired(5);
+	std::cout << Leo;
 
 	std::cout << std::endl;
 

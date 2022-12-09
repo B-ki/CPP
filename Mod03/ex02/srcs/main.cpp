@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/18 00:57:25 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 12:00:08 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ int	main(void)
 
 	FtSplitMan.takeDmg(3);
 	FtSplitMan.attack(Bene);
+	std::cout << FtSplitMan;
 	FtSplitMan.beRepaired(4);
 	FtSplitMan.takeDmg(3);
 	FtSplitMan.takeDmg(3);
@@ -65,8 +66,11 @@ int	main(void)
 	FtSplitMan.beRepaired(5);
 	FtSplitMan.takeDmg(90);
 	FtSplitMan.attack(Bene);
+	std::cout << FtSplitMan;
 	FtSplitMan.beRepaired(5);
 	FtSplitMan.takeDmg(90);
+	std::cout << FtSplitMan;
+	FtSplitMan.attack(Bene);
 
 	std::cout << std::endl;
 
@@ -102,9 +106,12 @@ int	main(void)
 	Leo.beRepaired(5);
 	Leo.takeDmg(90);
 	Leo.attack(Nico);
+	std::cout << Leo;
 	Leo.beRepaired(5);
 	Leo.takeDmg(90);
+	Leo.attack(Nico);
 	std::cout << Leo;
+	std::cout << std::endl;
 
 	return 0;
 }

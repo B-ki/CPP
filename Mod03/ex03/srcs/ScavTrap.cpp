@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/17 22:44:25 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 11:39:44 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,13 +53,6 @@ ScavTrap & ScavTrap::operator=(ScavTrap const & rhs)
 	return *this;
 }
 
-void ScavTrap::setAD(unsigned int dmg)
-{
-	std::cout <<SCAV<<name<<NORMAL<< "'s dmg is set to " << dmg << "." << std::endl;
-	AD = dmg;
-	return ;
-}
-
 void ScavTrap::attack(std::string &target)
 {
 	if (HP <= 0)
@@ -80,7 +73,10 @@ void ScavTrap::guardGate(void) const
 
 std::ostream& operator<<(std::ostream & o, ScavTrap const & i)
 {
-	o << i.getName() << " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
+	if (i.getHP() < 0)
+		o <<SCAV<< i.getName() <<NORMAL<< " is dead." << std::endl;
+	else
+		o << i.getName() << " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
 
 	return o;
 }

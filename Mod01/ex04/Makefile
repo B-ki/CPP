@@ -30,8 +30,8 @@ fclean:			clean
 		$(RM) $(NAME)
 
 test:
-		./$(NAME) $(TESTDIR)file "lil" "lol"
 		./$(NAME) $(TESTDIR)emptyfile "lil" "lol"
+		./$(NAME) $(TESTDIR)file "lil" "lol"
 		./$(NAME) $(TESTDIR)lilfile "lil" "lol"
 
 re:			fclean all

@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 14:48:21 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/14 15:18:25 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/23 21:12:31 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <string>
 #include <iostream>
+#include <cmath>
 
 class Fixed
 {

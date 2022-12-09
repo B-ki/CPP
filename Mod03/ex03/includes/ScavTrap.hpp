@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:46:31 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/17 22:35:47 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 11:39:54 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ class ScavTrap : virtual public ClapTrap
 		ScavTrap(std::string n);
 		~ScavTrap(void);
 	
-		void setAD(unsigned int dmg);
-
 		void attack(std::string &target);
 		void guardGate(void) const;
 

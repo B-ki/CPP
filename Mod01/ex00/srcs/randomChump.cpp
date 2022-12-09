@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 19:20:34 by rmorel            #+#    #+#             */
-/*   Updated: 2022/10/28 19:32:26 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/23 14:39:37 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	randomChump( std::string s)
 {
-	Zombie stackZ = Zombie(s);
+	Zombie stackZ(s);
 
 	stackZ.announce();
 }

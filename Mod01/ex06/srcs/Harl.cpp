@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 14:01:39 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/11 00:27:48 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/23 15:15:48 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,13 +42,25 @@ void	Harl::error(void)
 
 void	Harl::complain(std::string level)
 {
-	std::string	arr[4] = {"debug", "info", "warning", "error"};
-	funcPtr arrFuncPtr[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-	for (int i = 0; i < 4; i++)
+	std::string	arr[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	int i = 0;
+	for (; i < 4; i++)
 	{
-		if (level.compare(arr[i]) == 0)
-		{
-			(this->*arrFuncPtr[i])();
-		}
+		if (level == arr[i])
+			break;
+	}
+	switch(i)
+	{
+		case 0:
+			debug();
+		case 1:
+			info();
+		case 2:
+			warning();
+		case 3:
+			error();
+			break;
+		default:
+			std::cout << "Probably complaining about some bullshit" << std::endl;
 	}
 }

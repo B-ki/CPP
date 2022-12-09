@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 15:19:03 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 15:18:47 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/21 10:57:55 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,16 +72,11 @@ void PhoneBook::contactPrint ( int i ) const
 {
 	if (this->_size)
 	{
-		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
-		std::cout << std::setw(0) << std::setfill(' ');
-		std::cout << "-First Name- Last Name- Nick Name- Phone Nb - Dark Sec -" <<  std::endl;
-		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
-		std::cout << std::setw(0) << std::setfill(' ');
-		std::cout << "-";
-		this->_list[i - 1].printSpec();
-		std::cout << "-" << std::endl;
-		std::cout << std::setw(56) << std::setfill('-') << '-' << std::endl;
-		std::cout << std::setw(0) << std::setfill(' ');
+		std::cout << "First Name : " << this->_list[i - 1].getFirstName() << std::endl;
+		std::cout << "Last Name : " << this->_list[i - 1].getLastName() << std::endl;
+		std::cout << "Nick Name : " << this->_list[i - 1].getNickName() << std::endl;
+		std::cout << "Phone Number : " << this->_list[i - 1].getPhoneNumber() << std::endl;
+		std::cout << "Darkest Secret : " << this->_list[i - 1].getDarkestSecret() << std::endl;
 	}
 }
 

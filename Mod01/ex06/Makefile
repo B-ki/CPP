@@ -3,7 +3,7 @@ SRC = main.cpp Harl.cpp
 SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = bin/
-CC = c++ -I$(INCDIR)
+CC = c++ -I$(INCDIR) -g
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))
 RM = rm -f

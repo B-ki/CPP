@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/18 00:56:01 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/24 11:40:50 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,10 @@ FragTrap & FragTrap::operator=(FragTrap const & rhs)
 
 std::ostream& operator<<(std::ostream & o, FragTrap const & i)
 {
-	o <<FRAG<< i.getName() <<NORMAL<< " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
+	if (i.getHP() < 0)
+		o <<FRAG<< i.getName() <<NORMAL<< " is dead." << std::endl;
+	else
+		o <<FRAG<< i.getName() <<NORMAL<< " has " << i.getHP() << " HP, " << i.getMP() << " MP, and " << i.getAD() << " AD." << std::endl;
 
 	return o;
 }

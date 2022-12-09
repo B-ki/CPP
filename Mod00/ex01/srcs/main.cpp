@@ -6,14 +6,12 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 11:34:58 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 15:17:05 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/11/21 10:47:48 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 #include "Contact.hpp"
-#include <iostream>
-#include <string>
 #include <exception>
 
 int	main(void)
@@ -38,7 +36,7 @@ int	main(void)
 			{
 				std::cout << "Which user do you want? ";
 				std::getline(std::cin, cmd);
-				num = std::stoi(cmd);
+				num = std::atoi(cmd.c_str());
 				if (num <= 0 || num > list.getSize()) throw 1;
 			}
 			catch (...)
