@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 16:58:23 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/06 11:20:38 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/07 20:54:42 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,19 +37,19 @@ class AForm
 		class GradeTooHighException : public std::exception
 		{
 			public: 
-				virtual const char* what() const throw() {return "Grade too high";};
+				virtual const char* what() const throw();
 		};
 
 		class GradeTooLowException : public std::exception
 		{
 			public: 
-				virtual const char* what() const throw() {return "Grade too low";};
+				virtual const char* what() const throw();
 		};
 
 		class NotSignedException : public std::exception
 		{
 			public: 
-				virtual const char* what() const throw() {return "Form Not Signed";};
+				virtual const char* what() const throw();
 		};
 
 		virtual void beSigned(const Bureaucrat bur);

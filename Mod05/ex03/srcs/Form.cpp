@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/02 16:28:21 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/07 21:31:30 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,13 @@
 
 AForm::AForm(void) : name("Default"),checkSigned(false),gradeSign(150),gradeExec(150) {}
 
-AForm::AForm(std::string n, unsigned int g1, unsigned int g2) : name(n), checkSigned(false), gradeSign(g1), gradeExec(g2) {};
+AForm::AForm(std::string n, unsigned int g1, unsigned int g2) : name(n), checkSigned(false), gradeSign(g1), gradeExec(g2)
+{
+	if (g1 < 1 || g2 < 1)
+		throw GradeTooHighException();
+	else if (g1 > 150 || g2 > 150)
+		throw GradeTooLowException();
+}
 
 AForm::~AForm(void) {}
 
@@ -58,4 +64,19 @@ void AForm::beSigned(const Bureaucrat bur)
 	if (bur.getGrade() > gradeSign)
 		throw GradeTooLowException(); 
 	checkSigned = true;
+}
+
+const char * AForm::GradeTooHighException::what(void) const throw() 
+{
+	return "Grade too high";
+}
+
+const char * AForm::GradeTooLowException::what(void) const throw() 
+{
+	return "Grade too low";
+}
+
+const char * AForm::NotSignedException::what(void) const throw() 
+{
+	return "Form Not Signed";
 }

@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/02 17:35:23 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/07 21:20:29 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,12 @@ Bureaucrat::Bureaucrat(void) : _name("Default"),_grade(LOW) {}
 
 Bureaucrat::Bureaucrat(std::string n, unsigned int i) : _name(n)
 {
-	try
-	{
-		if (i < 1 || i > 150)
-			throw GradeTooLowException();
-		else
-			_grade = i;
-	}
-	catch (GradeTooLowException& e)
-	{
-		std::cout << "Grade must be between 1 and 150." << std::endl;
-	}
+	if (i < 1)
+		throw GradeTooHighException();
+	else if (i > 150)
+		throw GradeTooLowException();
+	else
+		_grade = i;
 };
 
 Bureaucrat::~Bureaucrat(void) {}
@@ -63,32 +58,18 @@ std::ostream& operator<<(std::ostream & o, Bureaucrat const & i)
 
 void	Bureaucrat::incrementGrade(void)
 {
-	try
-	{
-		if (_grade == 1)
-			throw GradeTooHighException();
-		else
-			_grade--;
-	}
-	catch (GradeTooHighException& e)
-	{
-		std::cout << "You can't increment the maximum grade." << std::endl;
-	}
+	if (_grade == 1)
+		throw GradeTooHighException();
+	else
+		_grade--;
 }
 
 void	Bureaucrat::decrementGrade(void)
 {
-	try
-	{
-		if (_grade == 150)
-			throw GradeTooLowException();
-		else
-			_grade++;
-	}
-	catch (std::exception& e)
-	{
-		std::cout << "You can't decrement the minimum grade." << std::endl;
-	}
+	if (_grade == 150)
+		throw GradeTooLowException();
+	else
+		_grade++;
 }
 
 void Bureaucrat::signForm(Form form) const
@@ -97,10 +78,17 @@ void Bureaucrat::signForm(Form form) const
 		form.beSigned(*this);
 		std::cout << _name << " signed the form " << form.getName() << std::endl;
 	}
-	catch (Form::GradeTooLowException &e) {
-		std::cout << _name << " couldn't sign the form " << form.getName() << " because grade was too low" << std::endl;
+	catch (std::exception &e) {
+		std::cout << _name << " couldn't sign the form " << form.getName() << " because " << e.what() << std::endl;
 	}
-	catch (Form::GradeTooHighException &e) {
-		std::cout << _name << " couldn't sign the form " << form.getName() << " because grade was too high" << std::endl;
-	}
+}
+
+const char* Bureaucrat::GradeTooHighException::what(void) const throw()
+{
+	return "Grade too high";
+}
+
+const char* Bureaucrat::GradeTooLowException::what(void) const throw()
+{
+	return "Grade too low";
 }

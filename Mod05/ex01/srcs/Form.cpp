@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/02 10:16:09 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/07 20:39:55 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,13 @@
 
 Form::Form(void) : _name("Default"),_signed(false),_gradeSign(150),_gradeExec(150) {}
 
-Form::Form(std::string n, unsigned int g1, unsigned int g2) : _name(n), _signed(false), _gradeSign(g1), _gradeExec(g2) {};
+Form::Form(std::string n, unsigned int g1, unsigned int g2) : _name(n), _signed(false), _gradeSign(g1), _gradeExec(g2)
+{
+	if (g1 < 1 || g2 < 1)
+		throw GradeTooHighException();
+	else if (g1 > 150 || g2 > 150)
+		throw GradeTooLowException();
+}
 
 Form::~Form(void) {}
 
@@ -57,4 +63,14 @@ void Form::beSigned(const Bureaucrat bur)
 	if (bur.getGrade() > _gradeSign)
 		throw GradeTooLowException(); 
 	_signed = true;
+}
+
+const char* Form::GradeTooHighException::what(void) const throw()
+{
+	return "Grade too high";
+}
+
+const char* Form::GradeTooLowException::what(void) const throw()
+{
+	return "Grade too low";
 }

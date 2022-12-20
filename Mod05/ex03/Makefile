@@ -4,7 +4,7 @@ SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = bin/
 CC = c++ -I$(INCDIR)
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))
 RM = rm -f
 

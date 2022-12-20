@@ -1,5 +1,5 @@
-NAME = test
-SRC = test.cpp
+NAME = Converter
+SRC = main.cpp
 SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = bin/

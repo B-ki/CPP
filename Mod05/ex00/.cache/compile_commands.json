@@ -1,11 +1,11 @@
 [
   {
-    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex00",
+    "directory": "/mnt/nfs/homes/rmorel/Documents/Mod05CPPVogsphere/ex00",
     "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/main.cpp -o bin/main.o",
     "file": "srcs/main.cpp"
   },
   {
-    "directory": "/mnt/nfs/homes/rmorel/Documents/CPP/Mod05/ex00",
+    "directory": "/mnt/nfs/homes/rmorel/Documents/Mod05CPPVogsphere/ex00",
     "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -Wshadow -c srcs/Bureaucrat.cpp -o bin/Bureaucrat.o",
     "file": "srcs/Bureaucrat.cpp"
   }

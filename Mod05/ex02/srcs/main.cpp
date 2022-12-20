@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/05 09:30:32 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/07 21:28:40 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include <ctime>
 
 int main(void)
 {
+	std::srand(std::time(0));
 	Bureaucrat nthimoni("Nicos", 1);
 	Bureaucrat gus("Gus", 30);
 	Bureaucrat leo("Leo", 50);
@@ -29,25 +31,76 @@ int main(void)
 	RobotomyRequestForm B72("Joe");
 	ShrubberyCreationForm B137("Mike");
 	ShrubberyCreationForm B145("Darcy");
-	
+
 	std::cout << nthimoni << std::endl << gus << std::endl << leo << std::endl << arturo << std::endl << tea << std::endl<< rcarles << std::endl;
-	rcarles.signForm(B145);
-	tea.signForm(B145);
-	tea.executeForm(B145);
-	tea.executeForm(B137);
-	arturo.executeForm(B137);
-	arturo.signForm(B137);
-	arturo.executeForm(B137);
-	leo.signForm(B72);
-	leo.executeForm(B72);
-	gus.executeForm(B72);
-	gus.executeForm(B45);
-	gus.signForm(B45);
-	gus.executeForm(B45);
-	nthimoni.signForm(B25);
-	nthimoni.signForm(B5);
-	nthimoni.executeForm(B25);
-	nthimoni.executeForm(B5);
+	try {
+		rcarles.signForm(B145);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		tea.signForm(B145);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		tea.executeForm(B145);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		tea.executeForm(B137);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		arturo.executeForm(B137);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		arturo.signForm(B137);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		arturo.executeForm(B137);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		leo.signForm(B72);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		leo.executeForm(B72);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		gus.executeForm(B72);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		gus.executeForm(B45);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		gus.signForm(B45);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		gus.executeForm(B45);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		nthimoni.signForm(B25);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		nthimoni.signForm(B5);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		nthimoni.executeForm(B25);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
+	try {
+		nthimoni.executeForm(B5);
+	}
+	catch(std::exception& e) {std::cout << e.what() << std::endl;}
 
 	return 0;
 }
