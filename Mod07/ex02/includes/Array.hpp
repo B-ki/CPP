@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/20 17:45:31 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/20 21:08:19 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/21 16:31:04 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ class Array
 			return _a[index];
 		}
 
-//      ########## OPERATOR ##########
+//      ########## GETTER ##########
 
 		unsigned int size(void) const {return _size;};
 
@@ -70,5 +70,19 @@ class Array
 		unsigned int _size;
 
 };
+
+template<class T>
+std::ostream& operator<<(std::ostream & o, const Array<T> & arr)
+{
+	o << "[";
+	for(unsigned int i = 0; i < arr.size(); i++)
+	{
+		if (i)
+			o << ", ";
+		o << arr[i];
+	};
+	o << "]";
+	return o;
+}
 
 #endif 

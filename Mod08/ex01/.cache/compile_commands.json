@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/home/bek/42/CPP/Mod08/ex01",
+    "command": "c++ -Iincludes/ -Wall -Wextra -Werror -std=c++98 -g -c srcs/main.cpp -o bin/main.o",
+    "file": "srcs/main.cpp"
+  }
+]
