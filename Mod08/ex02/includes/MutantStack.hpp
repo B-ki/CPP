@@ -1,44 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Span.hpp                                           :+:      :+:    :+:   */
+/*   MutantStack.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 22:50:29 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/22 12:54:54 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/22 15:49:27 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SPAN_HPP
-#define SPAN_HPP 
+#ifndef MUTANTSTACK_HPP
+#define MUTANTSTACK_HPP 
 
 #include <string>
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <climits>
+#include <stack>
+#include <iterator>
 
-class Span
+template <typename T>
+class MutantStack : public std::stack<T>
 {
 	public:
-		Span(unsigned int N);
-		Span(Span const & src);
-		~Span(void);
+		typedef typename std::stack<T>::container_type::iterator iterator;
 
-		Span & operator=(Span const & rhs);
+		MutantStack(void) {};
+		MutantStack(MutantStack const & src) {*this = src;};
+		~MutantStack(void) {};
 
-		void addNumber(int n);
-		unsigned int shortestSpan(void);
-		unsigned int longestSpan(void);
-		void addMultipleNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end);
+		MutantStack & operator=(MutantStack const & rhs)
+		{
+			if (*this != rhs)
+			{
+				this->c = rhs.c;
+				return *this;
+			}
+		};
+
+		iterator begin() { return this->c.begin();};
+		iterator end() { return this->c.end();};
 
 	protected:
 
 	private:
-		Span(void);
-		unsigned int _N;
-		std::vector<int> _vect;
 
 };
 

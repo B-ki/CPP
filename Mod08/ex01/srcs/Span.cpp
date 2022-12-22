@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/22 00:43:51 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/22 12:58:06 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,8 @@ unsigned int Span::longestSpan(void)
 	return *std::max_element(_vect.begin(), _vect.end()) - *std::min_element(_vect.begin(), _vect.end());
 }
 
-void Span::addMultipleNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end, int n)
+void Span::addMultipleNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end)
 {
-	for (std::vector<int>::iterator it = begin; it < end; it++)
-		_vect.push_back(n);
+	for (; begin != end; begin++)
+		addNumber(*begin);
 }

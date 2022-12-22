@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARRAY_HPP	includes/Array.hpp	14;"	d
+Array	includes/Array.hpp	/^		Array(Array const & src) {_size = src.size(); _a = new T[src.size()](); *this = src;};$/;"	f	class:Array
+Array	includes/Array.hpp	/^		Array(unsigned int n) : _size(n) {_a = new T[n]();};$/;"	f	class:Array
+Array	includes/Array.hpp	/^		Array(void) : _size(0) {_a = new T();};$/;"	f	class:Array
+Array	includes/Array.hpp	/^class Array$/;"	c
+CC	Makefile	/^CC = c++ -I$(INCDIR)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+INCDIR	Makefile	/^INCDIR = includes\/$/;"	m
+MAX_VAL	srcs/main.cpp	17;"	d	file:
+MAX_VAL	srcs/main2.cpp	17;"	d	file:
+NAME	Makefile	/^NAME = Templater$/;"	m
+OBJ	Makefile	/^OBJ = $(addprefix $(OBJDIR), $(SRC:.cpp=.o))$/;"	m
+OBJDIR	Makefile	/^OBJDIR = bin\/$/;"	m
+RM	Makefile	/^RM = rm -f$/;"	m
+SRC	Makefile	/^SRC = main.cpp$/;"	m
+SRCDIR	Makefile	/^SRCDIR = srcs\/$/;"	m
+_a	includes/Array.hpp	/^		T * _a;$/;"	m	class:Array
+_size	includes/Array.hpp	/^		unsigned int _size;$/;"	m	class:Array
+main	srcs/main.cpp	/^int main(int, char**)$/;"	f
+main	srcs/main2.cpp	/^int main(int, char**)$/;"	f
+operator =	includes/Array.hpp	/^		Array & operator=(Array const & rhs)$/;"	f	class:Array
+operator []	includes/Array.hpp	/^		T & operator[](unsigned int index)$/;"	f	class:Array
+operator []	includes/Array.hpp	/^		const T & operator[](unsigned int index) const$/;"	f	class:Array
+size	includes/Array.hpp	/^		unsigned int size(void) const {return _size;};$/;"	f	class:Array
+~Array	includes/Array.hpp	/^		~Array(void) {delete [] _a;};$/;"	f	class:Array
