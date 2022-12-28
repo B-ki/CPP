@@ -6,13 +6,15 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/21 22:46:48 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/28 14:31:22 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <easyfind.hpp>
 #include <vector>
+#include <map>
+#include <climits>
 
 int main(void)
 {
@@ -32,11 +34,26 @@ int main(void)
 		std::cout << ar[i];
 	}
 	std::cout << "]\n";
-	std::cout << *::easyfind(ar, 3) << std::endl;
+	std::cout << "Answer should be 3: " << *::easyfind(ar, 3) << std::endl;
 	try {
 		std::cout << *::easyfind(ar, 8) << std::endl;
 	} catch (std::exception &e) {
-		std::cout << "Error : " << e.what() << std::endl;
+		std::cout << "Error, can't find 8 : " << e.what() << std::endl;
+	}
+	try {
+		std::cout << *::easyfind(ar, -2) << std::endl;
+	} catch (std::exception &e) {
+		std::cout << "Error, can't find -2 : " << e.what() << std::endl;
+	}
+	try {
+		std::cout << *::easyfind(ar, INT_MAX) << std::endl;
+	} catch (std::exception &e) {
+		std::cout << "Error, can't find INT_MAX : " << e.what() << std::endl;
+	}
+	try {
+		std::cout << *::easyfind(ar, INT_MIN) << std::endl;
+	} catch (std::exception &e) {
+		std::cout << "Error, can't find INT_MIN : " << e.what() << std::endl;
 	}
 
     return 0;

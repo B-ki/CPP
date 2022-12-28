@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/22 12:58:06 by rmorel           ###   ########.fr       */
+/*   Updated: 2022/12/22 17:46:25 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,16 +42,14 @@ unsigned int Span::shortestSpan(void)
 {
 	if (!_N || _N == 1)
 		throw (std::exception());
-	long diff = INT_MAX;
-	for (unsigned long i = 1; i < _vect.size() - 1; i++)
+	std::sort(_vect.begin(), _vect.end());
+	size_t dist = UINT_MAX;
+	for (std::vector<int>::iterator it = _vect.begin() + 1; it != _vect.end(); it++)
 	{
-		for (unsigned long j = i + 1; j < _vect.size(); j++)
-		{
-			if (std::abs(_vect[i] - _vect[j]) < diff)
-				diff = std::abs(_vect[i] - _vect[j]); 
-		}
+		if (static_cast<size_t>(*it > *(it - 1) ? *it - *(it - 1) : *(it - 1) - *it) < dist)
+			dist = abs(*it - *(it - 1));
 	}
-	return diff;
+	return dist;
 }
 
 unsigned int Span::longestSpan(void)
@@ -63,6 +61,7 @@ unsigned int Span::longestSpan(void)
 
 void Span::addMultipleNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end)
 {
-	for (; begin != end; begin++)
-		addNumber(*begin);
+	if (std::distance(begin, end) +_vect.size() > _N)
+		throw (std::exception());
+	_vect.insert(_vect.end(), begin, end);
 }
