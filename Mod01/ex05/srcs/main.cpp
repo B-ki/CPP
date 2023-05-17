@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 14:13:16 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/11 00:01:38 by rmorel           ###   ########.fr       */
+/*   Updated: 2023/05/17 14:53:29 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ int	main(void)
 {
 	Harl	Harl;
 
-	Harl.complain("debug");
-	Harl.complain("info");
-	Harl.complain("warning");
-	Harl.complain("error");
+	Harl.complain("DEBUG");
+	Harl.complain("INFO");
+	Harl.complain("WARNING");
+	Harl.complain("ERROR");
 	Harl.complain("");
 	Harl.complain("bullshit");
 	return (0);
