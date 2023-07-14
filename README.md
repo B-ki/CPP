@@ -56,8 +56,7 @@ Notions : Repetitions and exceptions.
 
 Exercices : Bureaucrat, Forms and Interns.
 
-![image](https://github.com/B-ki/CPP/assets/87602480/9a1b112c-e2fc-4ee6-a8a3-5899db56f8aa) ![image](https://github.com/B-ki/CPP/assets/87602480/4ab870fd-9f70-48c8-b1a5-6de4ff3fccba)
-![image](https://github.com/B-ki/CPP/assets/87602480/089223b2-42e2-4ef8-afc2-7f4798637220)
+![image](https://github.com/B-ki/CPP/assets/87602480/9a1b112c-e2fc-4ee6-a8a3-5899db56f8aa) ![image](https://github.com/B-ki/CPP/assets/87602480/4ab870fd-9f70-48c8-b1a5-6de4ff3fccba) ![image](https://github.com/B-ki/CPP/assets/87602480/e78de73f-ea0a-4708-a5ff-3d126b1beccd)
 
 ### CPP06
 
