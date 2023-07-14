@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 14:01:39 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/23 15:15:48 by rmorel           ###   ########.fr       */
+/*   Updated: 2023/07/14 12:06:45 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,14 +53,18 @@ void	Harl::complain(std::string level)
 	{
 		case 0:
 			debug();
+			break;
 		case 1:
 			info();
+			break;
 		case 2:
 			warning();
+			break;
 		case 3:
 			error();
 			break;
 		default:
 			std::cout << "Probably complaining about some bullshit" << std::endl;
+			break;
 	}
 }

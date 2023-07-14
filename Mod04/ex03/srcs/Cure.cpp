@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/12/01 15:49:28 by rmorel           ###   ########.fr       */
+/*   Updated: 2023/07/14 12:09:56 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Cure::~Cure(void)
 {
 }
 
-Cure::Cure(Cure const & src)
+Cure::Cure(Cure const & src) : AMateria(src)
 {
 	*this = src;
 }

@@ -6,7 +6,7 @@
 /*   By: rmorel <rmorel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:44:36 by rmorel            #+#    #+#             */
-/*   Updated: 2022/11/25 12:17:31 by rmorel           ###   ########.fr       */
+/*   Updated: 2023/07/14 12:09:37 by rmorel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ Ice::Ice(void) {type = "ice";}
 
 Ice::~Ice(void) {}
 
-Ice::Ice(Ice const & src) {*this = src;}
+Ice::Ice(Ice const & src) : AMateria(src)
+{*this = src;}
 
 std::string const & Ice::getType(void) const {return type;}
 

@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "/home/rmorel/CPP/Mod01/ex06",
+    "command": "c++ -Iincludes/ -g -Wall -Wextra -Werror -std=c++98 -c srcs/main.cpp -o bin/main.o",
+    "file": "srcs/main.cpp"
+  },
+  {
+    "directory": "/home/rmorel/CPP/Mod01/ex06",
+    "command": "c++ -Iincludes/ -g -Wall -Wextra -Werror -std=c++98 -c srcs/Harl.cpp -o bin/Harl.o",
+    "file": "srcs/Harl.cpp"
+  }
+]
