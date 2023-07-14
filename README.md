@@ -12,6 +12,8 @@
 
 Pick any subject you want, and any exerice and build the executable using `make` and launch it. Every executable should be provided with it's own tests.
 
+You can also use `make_all.sh` or `clean_all.sh` to build / clean all executables
+
 ---
 
 ## Main topics learned in those subjects
