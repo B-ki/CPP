@@ -40,11 +40,15 @@ Notions : Heritage
 
 Exercices : ClapTrap, ScavTrap, FragTrap and DiamondTrap.
 
+![image](https://github.com/B-ki/CPP/assets/87602480/84577ba2-13cc-40b6-80a8-9b5a515f597d) ![image](https://github.com/B-ki/CPP/assets/87602480/3afd83a3-78ae-46f0-b13c-546bee23d0d7)
+
 ### CPP04
 
 Notions : Polymorphism, abstract classes and interfaces
 
 Exercices : Cats, Dogs and AMateria.
+
+![image](https://github.com/B-ki/CPP/assets/87602480/730bb47f-ca32-43d1-9f98-a02a6d040790)
 
 ### CPP05
 
@@ -57,10 +61,6 @@ Exercices : Bureaucrat, Forms and Interns.
 Notions : Casts.
 
 Exercices : Scalars, serialization and types.
-
-![image](https://github.com/B-ki/CPP/assets/87602480/84577ba2-13cc-40b6-80a8-9b5a515f597d) ![image](https://github.com/B-ki/CPP/assets/87602480/3afd83a3-78ae-46f0-b13c-546bee23d0d7)
-
-
 
 ### CPP07
 
